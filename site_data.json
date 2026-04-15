@@ -1,0 +1,214 @@
+{
+  "brand": {
+    "name": "Prof. Univ. Dr. Dominic Iliescu",
+    "specialty": "Obstetrică-Ginecologie",
+    "city": "Craiova",
+    "positioning": [
+      "Medicină materno-fetală",
+      "Ecografie avansată",
+      "Autoritate academică și științifică"
+    ],
+    "palette_direction": {
+      "base": [
+        "#ffffff",
+        "#f7fbfb",
+        "#eef7f7"
+      ],
+      "accents": [
+        "#0f8b8d",
+        "#2aa7a7",
+        "#0d6f73"
+      ],
+      "note": "Keep the visual family close to GinEcho without copying it directly."
+    }
+  },
+  "contact": {
+    "phones": [
+      "0771.201.201",
+      "0770.551.811"
+    ],
+    "email": "contact@ginecho.ro",
+    "hours": "Luni – Vineri, 09:00 – 21:00",
+    "locations": [
+      {
+        "label": "GinEcho – Zona Rotonda",
+        "address": "Str. Calea București, Nr. 34, Bl. A8, parter, Craiova",
+        "maps_query": "Str. Calea București 34 Craiova"
+      },
+      {
+        "label": "GinEcho – Zona Ciupercă",
+        "address": "Bd. 1 Mai, Bl. D4A, Craiova",
+        "maps_query": "Bd. 1 Mai D4A Craiova"
+      }
+    ]
+  },
+  "services": {
+    "ginecologie": [
+      {
+        "name": "Consultație clinică ginecologică",
+        "price_lei": 450
+      },
+      {
+        "name": "Consiliere infertilitate",
+        "price_lei": 450
+      },
+      {
+        "name": "Consultație la finalul lehuziei",
+        "price_lei": 400
+      },
+      {
+        "name": "Recoltare probe biologice",
+        "price_lei": 100
+      },
+      {
+        "name": "Monitorizare ovulație",
+        "price_lei": 300
+      },
+      {
+        "name": "Re-evaluare ovulație",
+        "price_lei": 200
+      },
+      {
+        "name": "Ecografie ginecologică",
+        "price_lei": 700
+      },
+      {
+        "name": "Ecografie transabdominală",
+        "price_lei": 400
+      },
+      {
+        "name": "Re-evaluare ginecologică",
+        "price_lei": 300
+      },
+      {
+        "name": "Videocolposcopie",
+        "price_lei": 900
+      }
+    ],
+    "obstetrica": [
+      {
+        "name": "Ecografie în primul trimestru: datare, viabilitate",
+        "price_lei": 550
+      },
+      {
+        "name": "Ecografie în primul trimestru: monitorizare",
+        "price_lei": 450
+      },
+      {
+        "name": "Ecografie 12 săptămâni: dublu test",
+        "price_lei": 1200
+      },
+      {
+        "name": "Ecografie 16-20 săptămâni: triplu test",
+        "price_lei": 1200
+      },
+      {
+        "name": "Ecografie trimestrul 2: 18-22 săptămâni morfologie",
+        "price_lei": 1200
+      },
+      {
+        "name": "Ecografie trimestrul 2: monitorizare morfologică",
+        "price_lei": 800
+      },
+      {
+        "name": "Ecografie trimestrul 3: pentru anomalii de sarcină",
+        "price_lei": 1200
+      },
+      {
+        "name": "Ecografie trimestrul 3: monitorizare fetală, bilanț termen",
+        "price_lei": 800
+      },
+      {
+        "name": "Ecografie monitorizare col uterin și ajustare medicație tocolitică",
+        "price_lei": 300
+      },
+      {
+        "name": "Taxa de urgență – prezentare fără programare",
+        "price_lei": 200
+      }
+    ]
+  },
+  "academic_highlights": {
+    "institutional": [
+      "Profesor universitar la Universitatea de Medicină și Farmacie din Craiova",
+      "Afiliere instituțională cu Spitalul Clinic Județean de Urgență Craiova",
+      "Șef al Clinicii II Obstetrică-Ginecologie",
+      "Coordonator de doctorat"
+    ],
+    "research_directions": [
+      "Inteligența artificială în Obstetrică-Ginecologie",
+      "Infertilitate și histerosonosalpingografie",
+      "Sănătate materno-fetală și detecția anomaliilor fetale",
+      "Ecografia în travaliu",
+      "Endometrioza",
+      "Histeroscopie",
+      "Patologia colului uterin",
+      "Fibrom uterin – tratament minim invaziv"
+    ],
+    "publication_signals": [
+      "monografie și volume coordonate",
+      "capitole de carte internaționale și naționale",
+      "articole științifice și contribuții editoriale",
+      "ghiduri și recomandări de practică"
+    ],
+    "societies": [
+      "ISUOG",
+      "SMFM",
+      "AAGL",
+      "FMF",
+      "FIGO affiliate member",
+      "SOGR",
+      "SRUOG",
+      "SRUMB"
+    ],
+    "committees": [
+      "Membru al Comisiei Ministerului Sănătății pentru Obstetrică-Ginecologie",
+      "Membru al Biroului Executiv al Societății Române de Obstetrică și Ginecologie",
+      "Președinte al Comisiei Teritoriale de Specialitate Obstetrică-Ginecologie, Craiova"
+    ]
+  },
+  "publications_featured": {
+    "books_and_coordinated_volumes": [
+      {
+        "year": 2022,
+        "title": "Pregnancy with Artificial Intelligence. A 9,5 months journey from preconception to birth",
+        "publisher": "Springer Nature"
+      },
+      {
+        "year": 2016,
+        "title": "Essential in Colposcopy",
+        "publisher": "Editura Medicală Universitară Craiova"
+      },
+      {
+        "year": 2016,
+        "title": "Ultrasound in Gynecology",
+        "publisher": "Editura Medicală Universitară Craiova"
+      },
+      {
+        "year": 2016,
+        "title": "Ultrasound in Obstetrics. Atlas",
+        "publisher": "Editura Medicală Universitară Craiova"
+      },
+      {
+        "year": 2022,
+        "title": "Obstetrica",
+        "publisher": "Editura Medicală Universitară Craiova"
+      },
+      {
+        "year": 2022,
+        "title": "Ginecologia",
+        "publisher": "Editura Medicală Universitară Craiova"
+      },
+      {
+        "year": 2024,
+        "title": "Inovation in Obstetrics and Gynecology",
+        "publisher": "MEDICHUB MEDIA"
+      }
+    ]
+  },
+  "notes": {
+    "pricing_source": "Current live GinEcho pricing page",
+    "authority_source": "Official UMF Craiova profile plus uploaded CV",
+    "publication_page_reference": "rodicanagy.ro/publicatii.html"
+  }
+}

@@ -1,0 +1,77 @@
+Build a premium standalone personal medical website for **Prof. Univ. Dr. Dominic Iliescu**, OB-GYN specialist in Craiova.
+
+Use the files in this package as the single source of truth:
+1. `agent.md`
+2. `project_context.md`
+3. `site_data.json`
+4. `content_blueprint.md`
+5. `copy_deck_ro.md`
+6. `publications_blueprint.md`
+7. `implementation_notes.md`
+
+## What I need
+A near-launch-ready website with:
+- premium design
+- mobile-first UX
+- Romanian patient-facing copy
+- strong authority framing
+- elegant services and pricing presentation
+- a serious academic layer
+- a polished publications page with collapsible categories
+
+## Build constraints
+- no placeholder text
+- no self-referential/meta website wording
+- no wireframe copy
+- no generic template filler
+- no exaggerated medical claims
+
+## Required pages
+- Acasă
+- Despre
+- Servicii
+- Activitate academică
+- Contact
+- Publicații
+
+## Mandatory visual direction
+Keep the palette and feel in the same family as GinEcho:
+- white / soft neutral backgrounds
+- refined teal / turquoise / blue-green accents
+- premium medical feel
+- clean typography
+- generous spacing
+- calm, trustworthy interface
+
+## Required behavior
+- sticky mobile CTA bar
+- visible booking CTA in header
+- elegant grouped Services page with current prices from `site_data.json`
+- “Vezi publicațiile” CTA on Despre and Activitate academică
+- Publications page built as data-driven accordions
+- strong metadata and schema foundations
+- reusable components and clean code
+
+## Content direction
+Use the Romanian copy in `copy_deck_ro.md` as the starting layer, then improve where needed while preserving tone:
+- calm
+- premium
+- authoritative
+- medically rigorous
+- human
+
+## Important content priority
+The site must clearly communicate:
+- strong expertise in obstetrics and gynecology
+- maternal-fetal and advanced ultrasound authority
+- professor status
+- academic and scientific activity
+- publication history
+- society and committee involvement
+- easy patient booking paths
+
+## Technical preference
+Use Next.js with reusable components and strong performance.
+
+## Final quality bar
+The result should feel custom, premium, serious, and genuinely review-ready.
