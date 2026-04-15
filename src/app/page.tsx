@@ -8,13 +8,11 @@ import {
   academicStats,
   authorityHighlights,
   bookingUrl,
-  contactActions,
   faqItems,
   featuredPricing,
+  homeBookingServices,
   featuredServices,
   formatPrice,
-  primaryPhone,
-  siteData,
 } from "@/lib/content/site-content";
 import { breadcrumbSchema, createPageMetadata, faqSchema } from "@/lib/seo";
 
@@ -165,42 +163,44 @@ export default function HomePage() {
                 Programare
               </p>
               <h2 className="mt-4 font-display text-5xl leading-none tracking-[-0.04em]">
-                Acces rapid către programare și contact
+                Programează o consultație ginecologică sau o ecografie în Craiova
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-white/74">
-                Fie că dorești o consultație ginecologică, o ecografie de sarcină sau o evaluare specializată, traseul de contact este simplu: telefon, WhatsApp sau pagina de programare.
+                Inițiază rapid programarea pentru consultații ginecologice, ecografii ginecologice, ecografii de sarcină și evaluări specializate oferite de Prof. Univ. Dr. Dominic Iliescu.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <ButtonLink href={bookingUrl}>Programează-te</ButtonLink>
-                <ButtonLink href="/contact" variant="secondary" className="border-white/30 bg-white/8 text-white hover:border-white/60 hover:text-white">
-                  Vezi contactul complet
+                <ButtonLink href="/servicii" variant="secondary" className="border-white/30 bg-white/8 text-white hover:border-white/60 hover:text-white">
+                  Vezi serviciile
                 </ButtonLink>
               </div>
             </div>
 
-            <div className="grid gap-4">
-              {contactActions.map((action) => (
-                <a
-                  key={action.label}
-                  href={action.href}
-                  target={action.href.startsWith("http") ? "_blank" : undefined}
-                  rel={action.href.startsWith("http") ? "noreferrer" : undefined}
-                  className="rounded-[1.8rem] border border-white/12 bg-white/8 p-5 transition hover:bg-white/12"
-                >
-                  <div className="flex items-center justify-between gap-3">
-                    <p className="text-lg font-semibold">{action.label}</p>
-                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-accent-soft)]">
-                      Acțiune
-                    </span>
-                  </div>
-                  <p className="mt-2 text-sm leading-7 text-white/68">{action.helper}</p>
-                </a>
-              ))}
-              <div className="rounded-[1.8rem] border border-white/12 bg-white/8 p-5">
-                <p className="text-sm leading-7 text-white/68">{siteData.contact.hours}</p>
-                <p className="mt-2 text-sm leading-7 text-white/68">{siteData.brand.city}</p>
-                <p className="mt-2 text-sm leading-7 text-white/68">{siteData.contact.email}</p>
-                <p className="mt-3 text-lg font-semibold">{primaryPhone}</p>
+            <div className="rounded-[1.9rem] border border-white/12 bg-white/8 p-6 sm:p-7">
+              <div className="max-w-xl">
+                <p className="text-lg font-semibold">Servicii frecvent solicitate</p>
+                <p className="mt-2 text-sm leading-7 text-white/68">
+                  Acces rapid către cele mai solicitate servicii de ginecologie, obstetrică și medicină materno-fetală.
+                </p>
+              </div>
+              <div className="mt-6 divide-y divide-white/10 rounded-[1.5rem] border border-white/10 bg-[rgba(255,255,255,0.04)]">
+                {homeBookingServices.map((service) =>
+                  service ? (
+                    <div key={service.name} className="flex items-center justify-between gap-4 px-5 py-4">
+                      <div>
+                        <p className="text-sm font-semibold leading-7 text-white">{service.name}</p>
+                        <p className="text-sm leading-7 text-white/58">{formatPrice(service.price)}</p>
+                      </div>
+                      <ButtonLink
+                        href="/servicii"
+                        variant="ghost"
+                        className="shrink-0 px-0 text-white hover:text-[var(--color-accent-soft)]"
+                      >
+                        Detalii
+                      </ButtonLink>
+                    </div>
+                  ) : null
+                )}
               </div>
             </div>
           </div>

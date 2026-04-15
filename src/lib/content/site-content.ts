@@ -190,6 +190,17 @@ export const featuredPricing = [
   services.flatMap((category) => category.services).find((service) => service.name === serviceName)
 );
 
+export const homeBookingServices = [
+  "ConsultaÈ›ie clinicÄƒ ginecologicÄƒ",
+  "Ecografie ginecologicÄƒ",
+  "Ecografie 12 sÄƒptÄƒmÃ¢ni: dublu test",
+  "Ecografie trimestrul 2: 18-22 sÄƒptÄƒmÃ¢ni morfologie",
+  "Ecografie trimestrul 3: monitorizare fetalÄƒ, bilanÈ› termen",
+  "Consiliere infertilitate",
+].map((serviceName) =>
+  services.flatMap((category) => category.services).find((service) => service.name === serviceName)
+);
+
 export const contactIntro =
   "Programările se pot face telefonic, online sau prin WhatsApp. Solicitările transmise online sunt urmate de confirmare, în funcție de disponibilitate.";
 
