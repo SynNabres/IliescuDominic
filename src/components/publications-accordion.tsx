@@ -32,17 +32,35 @@ export function PublicationsAccordion({ groups }: PublicationsAccordionProps) {
                 </div>
                 <div>
                   <h4 className="text-base font-semibold leading-7 text-[var(--color-ink)]">{entry.title}</h4>
+                  {entry.subtype ? (
+                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">{entry.subtype}</p>
+                  ) : null}
                   {entry.source ? <p className="mt-1 text-sm leading-7 text-[var(--color-muted)]">{entry.source}</p> : null}
+                  {entry.authorsNote ? <p className="mt-1 text-sm leading-7 text-[var(--color-muted)]">{entry.authorsNote}</p> : null}
                   {entry.note ? <p className="mt-1 text-sm leading-7 text-[var(--color-muted)]">{entry.note}</p> : null}
-                  {entry.link ? (
-                    <a
-                      href={entry.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-3 inline-flex text-sm font-semibold text-[var(--color-accent-strong)] transition hover:text-[var(--color-accent)]"
-                    >
-                      Deschide sursa
-                    </a>
+                  {entry.link || entry.doi ? (
+                    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                      {entry.link ? (
+                        <a
+                          href={entry.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex text-sm font-semibold text-[var(--color-accent-strong)] transition hover:text-[var(--color-accent)]"
+                        >
+                          Deschide sursa
+                        </a>
+                      ) : null}
+                      {entry.doi && entry.doi !== entry.link ? (
+                        <a
+                          href={entry.doi}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex text-sm font-semibold text-[var(--color-accent-strong)] transition hover:text-[var(--color-accent)]"
+                        >
+                          DOI
+                        </a>
+                      ) : null}
+                    </div>
                   ) : null}
                 </div>
               </article>

@@ -28,6 +28,9 @@ export type PublicationEntry = {
   source?: string;
   note?: string;
   link?: string;
+  doi?: string;
+  subtype?: string;
+  authorsNote?: string;
 };
 
 export type PublicationGroup = {

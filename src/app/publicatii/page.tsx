@@ -30,14 +30,14 @@ export default function PublicationsPage() {
         <Container className="grid gap-8 lg:grid-cols-[1fr_0.92fr]">
           <div>
             <SectionHeading
-              eyebrow="Publicații și contribuții"
-              title="O pagină academică structurată, clară și pregătită pentru extindere"
-              description="Selecția de mai jos reunește volume, capitole de carte, articole, traduceri de ghiduri și prezentări menționate explicit în materialele din repo. Structura rămâne pregătită pentru completări ulterioare, fără a schimba designul paginii."
+              eyebrow="Publicații și contribuții editoriale"
+              title="Repertoriu structurat al activității științifice și editoriale"
+              description="Lista de mai jos reunește volume coordonate, capitole de carte, articole științifice, traduceri editoriale, ghiduri și prezentări identificate în CV-ul profesional și în materialele deja integrate în proiect."
             />
           </div>
           <div className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8">
             <p className="text-sm leading-7 text-[var(--color-muted)]">
-              Pagina urmărește un model editorial lizibil pentru pacienți, colegi și publicul academic care doresc să valideze vizibilitatea științifică, fără a transforma conținutul într-o listă greu de parcurs.
+              Structura în acordeoane păstrează lectura clară chiar și pentru un volum amplu de lucrări, astfel încât activitatea științifică să poată fi parcursă ușor de paciente, colegi și publicul academic.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/activitate-academica">Activitate academică</ButtonLink>
