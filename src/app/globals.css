@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #f7fbfb;
+  --color-surface: #f2f9f8;
+  --color-surface-strong: #e4f2f1;
+  --color-accent: #1f8e92;
+  --color-accent-strong: #0f6f73;
+  --color-accent-soft: #99d7d8;
+  --color-ink: #163039;
+  --color-muted: #4c6770;
+  --color-border: rgba(18, 61, 71, 0.1);
+  --color-border-strong: rgba(18, 61, 71, 0.22);
+}
+
+@theme inline {
+  --color-background: #f7fbfb;
+  --color-foreground: #163039;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-background);
+}
+
+body {
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(153, 215, 216, 0.18), transparent 25%),
+    linear-gradient(180deg, #fbfefe 0%, #f7fbfb 100%);
+}
+
+a,
+button,
+input,
+textarea,
+summary {
+  outline-color: var(--color-accent);
+}
+
+::selection {
+  background: rgba(31, 142, 146, 0.18);
+}
+
+.font-display {
+  font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+}
+
+.animate-fade-up {
+  animation: fade-up 800ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
