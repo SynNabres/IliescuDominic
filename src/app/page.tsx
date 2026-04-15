@@ -107,8 +107,8 @@ export default function HomePage() {
           <div>
             <SectionHeading
               eyebrow="Tarife orientative"
-              title="Prețuri ușor de parcurs"
-              description="Primele repere utile pentru pacientele care doresc să înțeleagă rapid costurile evaluărilor frecvente."
+              title="Tarife consultații și ecografii ginecologice în Craiova"
+              description="Descoperă costurile principalelor servicii oferite de Prof. Univ. Dr. Dominic Iliescu, de la consultații ginecologice și ecografii ginecologice până la ecografii de sarcină și evaluări specializate."
             />
             <div className="mt-6 rounded-[2rem] border border-[var(--color-border)] bg-white p-6 shadow-[0_20px_55px_rgba(15,35,42,0.05)]">
               <div className="divide-y divide-[var(--color-border)]">
