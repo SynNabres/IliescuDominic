@@ -73,7 +73,7 @@ export default function AcademicPage() {
 
           <div className="rounded-[2rem] border border-[var(--color-border)] bg-white p-6 shadow-[0_20px_55px_rgba(15,35,42,0.05)] sm:p-8">
             <h2 className="font-display text-4xl leading-none tracking-[-0.03em] text-[var(--color-ink)]">
-              Semnale de vizibilitate științifică
+              Repere ale activității științifice
             </h2>
             <ul className="mt-6 grid gap-3">
               {publicationSignals.map((item) => (
