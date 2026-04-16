@@ -5,7 +5,6 @@ import { Hero } from "@/components/hero";
 import { SectionHeading } from "@/components/section-heading";
 import { StructuredData } from "@/components/structured-data";
 import {
-  academicStats,
   authorityHighlights,
   bookingUrl,
   faqItems,
@@ -15,6 +14,12 @@ import {
   formatPrice,
 } from "@/lib/content/site-content";
 import { breadcrumbSchema, createPageMetadata, faqSchema } from "@/lib/seo";
+
+type AboutApproachStat = {
+  value: string;
+  label: string;
+  compact?: boolean;
+};
 
 export const metadata = createPageMetadata({
   title: "Acasă",
@@ -29,6 +34,45 @@ export const metadata = createPageMetadata({
     "morfologie fetală Craiova",
   ],
 });
+
+const aboutApproachStats: AboutApproachStat[] = [
+  {
+    value: "22+",
+    label: "ani de experiență în obstetrică-ginecologie",
+  },
+  {
+    value: "Profesor universitar",
+    label: "Obstetrică-Ginecologie, UMF Craiova",
+    compact: true,
+  },
+  {
+    value: "Șef de clinică",
+    label: "Clinica II Obstetrică-Ginecologie, SCJU Craiova",
+    compact: true,
+  },
+  {
+    value: "792+",
+    label: "citări ISI",
+  },
+  {
+    value: "h-index 22",
+    label: "Google Scholar",
+    compact: true,
+  },
+  {
+    value: "50+",
+    label: "articole ISI ca autor principal",
+  },
+  {
+    value: "Premiul Academiei Române",
+    label: "„Daniel Danielopolu” – 2025",
+    compact: true,
+  },
+  {
+    value: "2",
+    label: "brevete în inovare medicală și inteligență artificială",
+  },
+];
 
 export default function HomePage() {
   return (
@@ -50,14 +94,21 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid gap-4">
-            {academicStats.map((stat) => (
+          <div className="grid auto-rows-fr gap-4 lg:grid-cols-2">
+            {aboutApproachStats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
+                className="flex h-full min-h-[10.5rem] flex-col justify-between rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
               >
-                <p className="font-display text-5xl leading-none text-[var(--color-accent-strong)]">{stat.value}</p>
-                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{stat.label}</p>
+                <p
+                  className={[
+                    "font-display leading-none text-[var(--color-accent-strong)]",
+                    stat.compact ? "text-[2rem] tracking-[-0.03em] sm:text-[2.25rem]" : "text-5xl",
+                  ].join(" ")}
+                >
+                  {stat.value}
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">{stat.label}</p>
               </div>
             ))}
           </div>
