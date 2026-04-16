@@ -41,36 +41,36 @@ const aboutApproachStats: AboutApproachStat[] = [
     label: "ani de experiență în obstetrică-ginecologie",
   },
   {
-    value: "Profesor universitar",
-    label: "Obstetrică-Ginecologie, UMF Craiova",
+    value: "Premiul Academiei Române",
+    label: "Premiul „Daniel Danielopolu” în 2025",
     compact: true,
   },
   {
-    value: "Șef de clinică",
-    label: "Clinica II Obstetrică-Ginecologie, SCJU Craiova",
+    value: "Premiul Congresului Mondial ISUOG în 2017",
+    label: "“Ecografia în travaliul la termen şi pre-termen (Ultrasound in term and preterm labour)”",
     compact: true,
+  },
+  {
+    value: "2 brevete ",
+    label: "în inovare medicală și inteligență artificială",
+  },
+  {
+    value: "34 cursuri de formare universitară și postuniversitară",
+    label: "atât naționale, cât și internaționale",
+    compact: true,
+  },
+  {
+    value: "50+ — articole ISI ca autor principal",
+    label: "108 articole ISI în total, 349 Alte Volume de rezumate cu ISBN / ISSN",
   },
   {
     value: "792+",
     label: "citări ISI",
-  },
-  {
-    value: "h-index 22",
-    label: "Google Scholar",
     compact: true,
   },
   {
-    value: "50+",
-    label: "articole ISI ca autor principal",
-  },
-  {
-    value: "Premiul Academiei Române",
-    label: "„Daniel Danielopolu” – 2025",
-    compact: true,
-  },
-  {
-    value: "2",
-    label: "brevete în inovare medicală și inteligență artificială",
+    value: "1712 citări Google scholar",
+    label: "h-index 22, i10-index 50",
   },
 ];
 
