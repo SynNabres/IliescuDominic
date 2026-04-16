@@ -353,7 +353,7 @@ export const publicationGroups: PublicationGroup[] = [
     id: "articles",
     title: "Articole științifice",
     description:
-      "Secțiunea reunește articolele nominale identificate în CV, de la diagnostic prenatal și medicină fetală la cazuri clinice, imagistică, genetică și aplicații AI.",
+      "Secțiunea reunește articolele publicate pe teme precum diagnosticul prenatal, medicina fetală, cazurile clinice, imagistica, genetica și aplicațiile inteligenței artificiale.",
     entries: sortEntries([
       {
         year: 2023,
@@ -749,7 +749,7 @@ export const publicationGroups: PublicationGroup[] = [
     id: "abstracts",
     title: "Abstracte și prezentări la congrese",
     description:
-      "Lista reunește rezumate, postere premiate și comunicări la congrese sau cursuri naționale și internaționale, așa cum sunt nominalizate în CV.",
+      "Lista reunește rezumate, postere premiate și comunicări la congrese sau cursuri naționale și internaționale",
     entries: sortEntries([
       {
         year: 2024,

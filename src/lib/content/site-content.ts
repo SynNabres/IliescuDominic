@@ -246,7 +246,7 @@ export const academicSections = [
     items: [
       "Cursuri de obstetrică-ginecologie pentru Facultatea de Medicină și programe în limba engleză",
       "Director sau colaborator în cursuri de competență pentru colposcopie și ecografie în obstetrică-ginecologie",
-      "6 doctoranzi finalizați și 8 doctoranzi în coordonare, conform CV-ului din aprilie 2025",
+      "6 doctoranzi finalizați și 8 doctoranzi în coordonare",
       "Coordonare constantă a lucrărilor prezentate de studenți la conferințe naționale și internaționale",
     ],
   },
@@ -275,7 +275,7 @@ export const academicSections = [
   {
     title: "Activitate editorială și peer review",
     body:
-      "CV-ul confirmă implicare editorială în publicații de specialitate și activitate de reviewer pentru reviste indexate internațional, cu interes special pentru imagistică, medicină fetală și diagnostic prenatal.",
+      "Implicarea editorială în publicații de specialitate și activitate de reviewer pentru reviste indexate internațional, cu interes special pentru imagistică, medicină fetală și diagnostic prenatal.",
     items: [
       "Membru editorial în reviste de obstetrică-ginecologie și imagistică medicală",
       "Reviewer pentru reviste indexate internațional, inclusiv JCM, Prenatal Diagnosis și Fetal Diagnosis and Therapy",
@@ -289,7 +289,7 @@ export const academicStats = [
   { value: "22+", label: "ani de practică în obstetrică-ginecologie" },
   { value: "16+", label: "ani în educația medicală universitară" },
   { value: "48", label: "articole ISI ca autor principal" },
-  { value: "493", label: "citări ISI menționate în CV" },
+  { value: "493", label: "citări ISI" },
 ];
 
 export const publicationSignals = [
