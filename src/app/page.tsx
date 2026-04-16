@@ -39,6 +39,7 @@ const aboutApproachStats: AboutApproachStat[] = [
   {
     value: "22+",
     label: "ani de experiență în obstetrică-ginecologie",
+    compact: true,
   },
   {
     value: "Premiul Academiei Române",
@@ -46,17 +47,18 @@ const aboutApproachStats: AboutApproachStat[] = [
     compact: true,
   },
   {
-    value: "Premiul Congresului Mondial ISUOG în 2017",
+    value: "Premiul Congresului Mondial ISUOG",
     label: "“Ecografia în travaliul la termen şi pre-termen (Ultrasound in term and preterm labour)”",
     compact: true,
   },
   {
     value: "2 brevete ",
     label: "în inovare medicală și inteligență artificială",
+    compact: true,
   },
   {
-    value: "34 cursuri de formare universitară și postuniversitară",
-    label: "atât naționale, cât și internaționale",
+    value: "34 ",
+    label: "cursuri de formare universitară și postuniversitară",
     compact: true,
   },
   {
@@ -71,6 +73,7 @@ const aboutApproachStats: AboutApproachStat[] = [
   {
     value: "1712 citări Google scholar",
     label: "h-index 22, i10-index 50",
+    compact: true,
   },
 ];
 
