@@ -15,7 +15,12 @@ export function PublicationsAccordion({ groups }: PublicationsAccordionProps) {
         >
           <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
             <div>
-              <h3 className="text-xl font-semibold text-[var(--color-ink)]">{group.title}</h3>
+              <div className="flex flex-wrap items-center gap-3">
+                <h3 className="text-xl font-semibold text-[var(--color-ink)]">{group.title}</h3>
+                <span className="inline-flex rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">
+                  {group.entries.length} articole
+                </span>
+              </div>
               <p className="mt-2 max-w-3xl text-sm leading-7 text-[var(--color-muted)]">{group.description}</p>
             </div>
             <span className="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-border)] text-[var(--color-accent-strong)] transition group-open:rotate-45">
