@@ -18,7 +18,7 @@ import { breadcrumbSchema, createPageMetadata, faqSchema } from "@/lib/seo";
 type AboutApproachStat = {
   value: string;
   label: string;
-  compact?: boolean;
+  variant?: "metric" | "title";
 };
 
 export const metadata = createPageMetadata({
@@ -39,27 +39,27 @@ const aboutApproachStats: AboutApproachStat[] = [
   {
     value: "22+",
     label: "ani de experiență în obstetrică-ginecologie",
-    compact: true,
+    variant: "metric",
   },
   {
     value: "Premiul Academiei Române",
     label: "Premiul „Daniel Danielopolu” în 2025",
-    compact: true,
+    variant: "title",
   },
   {
     value: "Premiul Congresului Mondial ISUOG",
     label: "“Ecografia în travaliul la termen şi pre-termen (Ultrasound in term and preterm labour)”",
-    compact: true,
+    variant: "title",
   },
   {
     value: "2 brevete ",
     label: "în inovare medicală și inteligență artificială",
-    compact: true,
+    variant: "metric",
   },
   {
     value: "34 ",
     label: "cursuri de formare universitară și postuniversitară",
-    compact: true,
+    variant: "metric",
   },
   {
     value: "50+ — articole ISI ca autor principal",
@@ -68,12 +68,12 @@ const aboutApproachStats: AboutApproachStat[] = [
   {
     value: "792+",
     label: "citări ISI",
-    compact: true,
+    variant: "metric",
   },
   {
     value: "1712 citări Google scholar",
     label: "h-index 22, i10-index 50",
-    compact: true,
+    variant: "title",
   },
 ];
 
@@ -104,17 +104,23 @@ export default function HomePage() {
             {aboutApproachStats.map((stat) => (
               <div
                 key={stat.label}
-                className="flex h-full min-h-[10.5rem] flex-col justify-between rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
+                className="h-full rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6"
               >
-                <p
-                  className={[
-                    "font-display leading-none text-[var(--color-accent-strong)]",
-                    stat.compact ? "text-[2rem] tracking-[-0.03em] sm:text-[2.25rem]" : "text-5xl",
-                  ].join(" ")}
-                >
-                  {stat.value}
-                </p>
-                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">{stat.label}</p>
+                <div className="flex h-full flex-col gap-3">
+                  <p
+                    className={[
+                      "font-display text-[var(--color-accent-strong)]",
+                      stat.variant === "metric"
+                        ? "max-w-[10ch] text-[2.65rem] leading-[0.92] tracking-[-0.05em] sm:text-[3rem]"
+                        : "max-w-[11ch] text-[2rem] leading-[1.02] tracking-[-0.04em] sm:text-[2.35rem]",
+                    ].join(" ")}
+                  >
+                    {stat.value}
+                  </p>
+                  <p className="mt-auto text-sm leading-6 text-[var(--color-muted)] sm:text-[0.95rem]">
+                    {stat.label}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
