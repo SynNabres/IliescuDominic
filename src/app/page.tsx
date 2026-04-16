@@ -9,9 +9,9 @@ import {
   bookingUrl,
   faqItems,
   featuredPricing,
-  homeBookingServices,
   featuredServices,
   formatPrice,
+  homeBookingServices,
 } from "@/lib/content/site-content";
 import { breadcrumbSchema, createPageMetadata, faqSchema } from "@/lib/seo";
 
@@ -48,22 +48,23 @@ const aboutApproachStats: AboutApproachStat[] = [
   },
   {
     value: "Premiul Congresului Mondial ISUOG",
-    label: "“Ecografia în travaliul la termen şi pre-termen (Ultrasound in term and preterm labour)”",
+    label: "„Ecografia în travaliul la termen și pre-termen (Ultrasound in term and preterm labour)”",
     variant: "title",
   },
   {
-    value: "2 brevete ",
+    value: "2 brevete",
     label: "în inovare medicală și inteligență artificială",
     variant: "metric",
   },
   {
-    value: "34 ",
+    value: "34",
     label: "cursuri de formare universitară și postuniversitară",
     variant: "metric",
   },
   {
-    value: "50+ — articole ISI ca autor principal",
-    label: "108 articole ISI în total, 349 Alte Volume de rezumate cu ISBN / ISSN",
+    value: "50+ articole ISI ca autor principal",
+    label: "108 articole ISI în total, 349 alte volume de rezumate cu ISBN / ISSN",
+    variant: "title",
   },
   {
     value: "792+",
@@ -71,7 +72,7 @@ const aboutApproachStats: AboutApproachStat[] = [
     variant: "metric",
   },
   {
-    value: "1712 citări Google scholar",
+    value: "1712 citări Google Scholar",
     label: "h-index 22, i10-index 50",
     variant: "title",
   },
@@ -85,44 +86,50 @@ export default function HomePage() {
       <Breadcrumbs items={[{ href: "/", label: "Acasă" }]} />
 
       <section className="py-16 sm:py-20">
-        <Container className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="rounded-[2rem] border border-[var(--color-border)] bg-white p-7 shadow-[0_24px_60px_rgba(15,35,42,0.06)] sm:p-10">
-            <SectionHeading
-              eyebrow="Despre abordare"
-              title="Îngrijire medicală calmă, precisă și bine argumentată"
-              description="În alegerea unui medic obstetrician-ginecolog, experiența clinică este importantă. La fel de importantă este însă capacitatea de a analiza corect fiecare situație, de a diferenția esențialul de detaliile secundare și de a construi o conduită medicală adaptată nevoilor reale ale fiecărei paciente. Un act medical de calitate înseamnă nu doar investigații și tratamente, ci și judecată clinică, echilibru, claritate în comunicare și respect pentru contextul individual.
-              Pentru multe paciente, încrederea apare atunci când lucrurile sunt explicate limpede, fără grabă și fără ambiguități. De aceea, o abordare medicală solidă presupune evaluare atentă, recomandări bine fundamentate și decizii luate cu rigoare, responsabilitate și actualizare profesională constantă. Mai ales în obstetrică și ginecologie, unde deciziile pot avea implicații importante asupra sănătății, fertilității, sarcinii sau calității vieții, este esențial ca fiecare pas să fie susținut de competență și discernământ.
-              Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține această abordare orientată spre claritate, diagnostic atent și conduită medicală bine fundamentată. Experiența clinică este completată de implicarea constantă în educația medicală și cercetarea de specialitate, ceea ce contribuie la o practică bazată pe standarde actuale, evaluare critică și atenție reală pentru detalii.
-              Pentru pacientă, acest lucru se traduce printr-un parcurs medical mai clar, mai bine explicat și mai bine înțeles. Înseamnă investigații recomandate cu un scop precis, opțiuni prezentate onest, răspunsuri formulate clar și decizii construite pe argumente medicale solide. Înseamnă, de asemenea, o relație medicală bazată pe seriozitate, echilibru și încredere — mai ales în momentele în care este nevoie de siguranță, orientare și o evaluare atentă."
-            />
-            <p className="mt-6 text-base leading-8 text-[var(--color-muted)]">
-              Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține o abordare orientată spre claritate, diagnostic atent și conduită medicală bine fundamentată. Pentru multe paciente, asta înseamnă mai multă încredere într-un parcurs medical explicat limpede și adaptat contextului real.
-            </p>
+        <Container className="space-y-6">
+          <div className="-mx-4 overflow-x-auto px-4 pb-2 sm:-mx-0 sm:px-0">
+            <div className="grid min-w-max auto-cols-[15.5rem] grid-flow-col gap-4 lg:auto-cols-[16.5rem]">
+              {aboutApproachStats.map((stat) => (
+                <article
+                  key={stat.label}
+                  className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6"
+                >
+                  <div className="flex min-h-[11rem] flex-col gap-3">
+                    <p
+                      className={[
+                        "font-display text-[var(--color-accent-strong)]",
+                        stat.variant === "metric"
+                          ? "max-w-[9ch] text-[2.65rem] leading-[0.92] tracking-[-0.05em] sm:text-[3rem]"
+                          : "max-w-[11ch] text-[2rem] leading-[1.02] tracking-[-0.04em] sm:text-[2.35rem]",
+                      ].join(" ")}
+                    >
+                      {stat.value}
+                    </p>
+                    <p className="mt-auto text-sm leading-6 text-[var(--color-muted)] sm:text-[0.95rem]">
+                      {stat.label}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
 
-          <div className="grid auto-rows-fr gap-4 lg:grid-cols-2">
-            {aboutApproachStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="h-full rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6"
-              >
-                <div className="flex h-full flex-col gap-3">
-                  <p
-                    className={[
-                      "font-display text-[var(--color-accent-strong)]",
-                      stat.variant === "metric"
-                        ? "max-w-[10ch] text-[2.65rem] leading-[0.92] tracking-[-0.05em] sm:text-[3rem]"
-                        : "max-w-[11ch] text-[2rem] leading-[1.02] tracking-[-0.04em] sm:text-[2.35rem]",
-                    ].join(" ")}
-                  >
-                    {stat.value}
-                  </p>
-                  <p className="mt-auto text-sm leading-6 text-[var(--color-muted)] sm:text-[0.95rem]">
-                    {stat.label}
-                  </p>
-                </div>
+          <div className="rounded-[2rem] border border-[var(--color-border)] bg-white p-7 shadow-[0_24px_60px_rgba(15,35,42,0.06)] sm:p-10">
+            <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+              <SectionHeading
+                eyebrow="Despre abordare"
+                title="Îngrijire medicală calmă, precisă și bine argumentată"
+                description="În alegerea unui medic obstetrician-ginecolog, experiența clinică este importantă. La fel de importantă este însă capacitatea de a analiza corect fiecare situație, de a diferenția esențialul de detaliile secundare și de a construi o conduită medicală adaptată nevoilor reale ale fiecărei paciente. Un act medical de calitate înseamnă nu doar investigații și tratamente, ci și judecată clinică, echilibru, claritate în comunicare și respect pentru contextul individual.
+                Pentru multe paciente, încrederea apare atunci când lucrurile sunt explicate limpede, fără grabă și fără ambiguități. De aceea, o abordare medicală solidă presupune evaluare atentă, recomandări bine fundamentate și decizii luate cu rigoare, responsabilitate și actualizare profesională constantă. Mai ales în obstetrică și ginecologie, unde deciziile pot avea implicații importante asupra sănătății, fertilității, sarcinii sau calității vieții, este esențial ca fiecare pas să fie susținut de competență și discernământ.
+                Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține această abordare orientată spre claritate, diagnostic atent și conduită medicală bine fundamentată. Experiența clinică este completată de implicarea constantă în educația medicală și cercetarea de specialitate, ceea ce contribuie la o practică bazată pe standarde actuale, evaluare critică și atenție reală pentru detalii.
+                Pentru pacientă, acest lucru se traduce printr-un parcurs medical mai clar, mai bine explicat și mai bine înțeles. Înseamnă investigații recomandate cu un scop precis, opțiuni prezentate onest, răspunsuri formulate clar și decizii construite pe argumente medicale solide. Înseamnă, de asemenea, o relație medicală bazată pe seriozitate, echilibru și încredere, mai ales în momentele în care este nevoie de siguranță, orientare și o evaluare atentă."
+              />
+              <div className="lg:border-l lg:border-[var(--color-border)] lg:pl-8">
+                <p className="text-base leading-8 text-[var(--color-muted)]">
+                  Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține o abordare orientată spre claritate, diagnostic atent și conduită medicală bine fundamentată. Pentru multe paciente, asta înseamnă mai multă încredere într-un parcurs medical explicat limpede și adaptat contextului real.
+                </p>
               </div>
-            ))}
+            </div>
           </div>
         </Container>
       </section>
@@ -233,7 +240,11 @@ export default function HomePage() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <ButtonLink href={bookingUrl}>Programează-te</ButtonLink>
-                <ButtonLink href="/servicii" variant="secondary" className="border-white/30 bg-white/8 text-white hover:border-white/60 hover:text-white">
+                <ButtonLink
+                  href="/servicii"
+                  variant="secondary"
+                  className="border-white/30 bg-white/8 text-white hover:border-white/60 hover:text-white"
+                >
                   Vezi serviciile
                 </ButtonLink>
               </div>
