@@ -35,8 +35,8 @@ export default function AcademicPage() {
           <div>
             <SectionHeading
               eyebrow="Activitate academică și științifică"
-              title="Un profil profesional susținut de cercetare, formare și implicare în standardele domeniului"
-              description="Activitatea academică și științifică reprezintă o componentă importantă a profilului profesional al Prof. Univ. Dr. Dominic Iliescu. Aceasta completează practica medicală prin cercetare, formare universitară, coordonare doctorală și participare activă la dezvoltarea standardelor profesionale în obstetrică și ginecologie."
+              title="Consultații susținute de experiență clinică vastă, activitate academică de referință și implicare constantă în evoluția obstetricii și ginecologiei."
+              description="La Prof. Univ. Dr. Dominic Iliescu, beneficiezi de o evaluare medicală riguroasă, bazată pe expertiză reală, actualizare continuă și decizii bine fundamentate."
             />
           </div>
 

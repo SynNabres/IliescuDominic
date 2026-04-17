@@ -31,7 +31,7 @@ CTA:
 - Vezi publicațiile
 
 ## Activitate academică — Intro
-Activitatea academică și științifică reprezintă o componentă importantă a profilului profesional al Prof. Univ. Dr. Dominic Iliescu. Aceasta completează practica medicală prin cercetare, formare universitară, coordonare doctorală și participare activă la dezvoltarea standardelor profesionale în obstetrică și ginecologie.
+La Prof. Univ. Dr. Dominic Iliescu, beneficiezi de o evaluare medicală riguroasă, bazată pe expertiză reală, actualizare continuă și decizii bine fundamentate.
 
 ## Activitate academică — Formare
 Formarea sa include studii medicale și postuniversitare, titlul de doctor în medicină, abilitare și activitate universitară desfășurată la Universitatea de Medicină și Farmacie din Craiova. Interesele sale academice și științifice acoperă domenii cu impact direct asupra îngrijirii pacientelor: medicina materno-fetală, ecografia în obstetrică și ginecologie, depistarea anomaliilor fetale, infertilitatea, histeroscopia, patologia colului uterin și integrarea tehnologiilor moderne în practica medicală.
