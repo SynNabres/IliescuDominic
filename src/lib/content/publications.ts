@@ -1,5 +1,5 @@
 import type { PublicationEntry, PublicationGroup } from "@/lib/content/site-content";
-import { invitedPlenarySourceList } from "@/lib/content/invited-plenary-source-list";
+import invitedPlenaryData from "@/lib/content/prezentari-invitat-plen.json";
 
 const sortEntries = (entries: PublicationEntry[]) =>
   [...entries].sort((left, right) => {
@@ -10,21 +10,28 @@ const sortEntries = (entries: PublicationEntry[]) =>
 const buildInvitedPlenarySourceEntries = (): PublicationEntry[] => {
   let inferredYear = 0;
 
-  return invitedPlenarySourceList
-    .split("\n")
-    .map((line) => line.replace(/\r/g, ""))
-    .filter((line) => line.trim().length > 0)
-    .map((line) => {
-      const yearMatch = line.match(/(?:19|20)\d{2}/);
+  return invitedPlenaryData.sections.flatMap((section) =>
+    section.entries.flatMap((entry) => {
+      const yearMatch = entry.event.match(/(?:19|20)\d{2}/);
       if (yearMatch) {
         inferredYear = Number(yearMatch[0]);
       }
 
-      return {
+      const urlsNote =
+        entry.urls && entry.urls.length > 1
+          ? `Link-uri: ${entry.urls.join(", ")}`
+          : undefined;
+
+      return entry.presentations.map((presentation) => ({
         year: inferredYear,
-        title: line,
-      };
-    });
+        title: presentation,
+        source: entry.event,
+        subtype: section.name,
+        link: entry.urls?.[0],
+        note: urlsNote,
+      }));
+    })
+  );
 };
 
 export const publicationGroups: PublicationGroup[] = [
@@ -176,7 +183,7 @@ export const publicationGroups: PublicationGroup[] = [
   },
   {
     id: "invited-plenary-presentations",
-    title: "Prezentări în calitate de invitat în plenul unor manifestări ştiinţifice sau cursuri internaționale și naționale",
+    title: invitedPlenaryData.title,
     description:
       "Selecție curatoriată a prelegerilor invitate (internaționale și naționale), organizată cronologic, pe baza listei furnizate pentru pagina de Publicații.",
     entries: buildInvitedPlenarySourceEntries(),
