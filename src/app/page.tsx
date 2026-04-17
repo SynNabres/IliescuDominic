@@ -115,7 +115,7 @@ export default function HomePage() {
           </div>
 
           <div className="rounded-[2rem] border border-[var(--color-border)] bg-white p-7 shadow-[0_24px_60px_rgba(15,35,42,0.06)] sm:p-10">
-            <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <div>
               <SectionHeading
                 eyebrow="Despre abordare"
                 title="Îngrijire medicală calmă, precisă și bine argumentată"
@@ -124,11 +124,6 @@ export default function HomePage() {
                 Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține această abordare orientată spre claritate, diagnostic atent și conduită medicală bine fundamentată. Experiența clinică este completată de implicarea constantă în educația medicală și cercetarea de specialitate, ceea ce contribuie la o practică bazată pe standarde actuale, evaluare critică și atenție reală pentru detalii.
                 Pentru pacientă, acest lucru se traduce printr-un parcurs medical mai clar, mai bine explicat și mai bine înțeles. Înseamnă investigații recomandate cu un scop precis, opțiuni prezentate onest, răspunsuri formulate clar și decizii construite pe argumente medicale solide. Înseamnă, de asemenea, o relație medicală bazată pe seriozitate, echilibru și încredere, mai ales în momentele în care este nevoie de siguranță, orientare și o evaluare atentă."
               />
-              <div className="lg:border-l lg:border-[var(--color-border)] lg:pl-8">
-                <p className="text-base leading-8 text-[var(--color-muted)]">
-                  Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține o abordare orientată spre claritate, diagnostic atent și conduită medicală bine fundamentată. Pentru multe paciente, asta înseamnă mai multă încredere într-un parcurs medical explicat limpede și adaptat contextului real.
-                </p>
-              </div>
             </div>
           </div>
         </Container>
