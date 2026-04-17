@@ -1,10 +1,31 @@
 import type { PublicationEntry, PublicationGroup } from "@/lib/content/site-content";
+import { invitedPlenarySourceList } from "@/lib/content/invited-plenary-source-list";
 
 const sortEntries = (entries: PublicationEntry[]) =>
   [...entries].sort((left, right) => {
     if (right.year !== left.year) return right.year - left.year;
     return left.title.localeCompare(right.title);
   });
+
+const buildInvitedPlenarySourceEntries = (): PublicationEntry[] => {
+  let inferredYear = 0;
+
+  return invitedPlenarySourceList
+    .split("\n")
+    .map((line) => line.replace(/\r/g, ""))
+    .filter((line) => line.trim().length > 0)
+    .map((line) => {
+      const yearMatch = line.match(/(?:19|20)\d{2}/);
+      if (yearMatch) {
+        inferredYear = Number(yearMatch[0]);
+      }
+
+      return {
+        year: inferredYear,
+        title: line,
+      };
+    });
+};
 
 export const publicationGroups: PublicationGroup[] = [
   {
@@ -158,228 +179,7 @@ export const publicationGroups: PublicationGroup[] = [
     title: "Prezentări în calitate de invitat în plenul unor manifestări ştiinţifice sau cursuri internaționale și naționale",
     description:
       "Selecție curatoriată a prelegerilor invitate (internaționale și naționale), organizată cronologic, pe baza listei furnizate pentru pagina de Publicații.",
-    entries: sortEntries([
-      {
-        year: 2024,
-        title: "Urinary pH as borderline in the effectiveness of the treatment of urinary tract infections",
-        source: "5th International SREG Congress of Aesthetic Gynecology & Regenerative Medicine, 27 octombrie 2024, București.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2023,
-        title: "Up-To-Date in the Management of Urinary Tract Infections",
-        source: "4th SREG International Conference, Romanian Society of Aesthetic Gynecology, 15-17 septembrie 2023, Bucharest (Moderator).",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2023,
-        title: "Obstetric and gynecologic malpractice claims, incidence and causes",
-        source: "Hellenic-Romanian Society of Surgery Conference, ediția a 3-a, 15-17 iunie 2023, Craiova.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2022,
-        title: "Ultrasound evaluation of maternal trauma at birth",
-        source: "The XVIII Congress of Romanian Society of Urogynecology, internațional, Malta, 18-21 noiembrie 2022.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2022,
-        title: "First trimester fetal heart interpretation by artificial intelligence",
-        source: "The 18th World Federation for Medicine and Biology Congress + SRUMB Annual Conference + EUROSON 2022, Timișoara, 25-28 mai 2022.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2022,
-        title: "First trimester fetal heart anomalies: detection and histovirtuoscopy confirmation",
-        source: "3D/4D VISUS Course, Atena, 24-25 septembrie 2022.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2022,
-        title: "Hysterosonosalpingography – better than expected",
-        source: "3D/4D VISUS Course, Atena, 24-25 septembrie 2022.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2021,
-        title: "First trimester CNS tips & tricks and surprises",
-        source:
-          "Fetal CNS evaluation and Fetal Neurology (University of Athens + IAPM + HSUMB), 25 septembrie 2021.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2021,
-        title: "Portal venous system anomalies: a new prognostic factor in cases of agenesis of ductus venosus?",
-        source: "37th Congress of The Fetus as a Patient Society / 1st Congress of Young Scientists of IAPM, 23-25 aprilie 2021, online.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2021,
-        title:
-          "Virtual autopsy and confirmation of normal fetal heart anatomy in the first trimester using three-dimensional (3D) reconstruction of histological sections",
-        source: "37th Congress of The Fetus as a Patient Society / 1st Congress of Young Scientists of IAPM, 23-25 aprilie 2021, online.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2020,
-        title: "Workshop: How do we manage anomalies of the corpus callosum",
-        source: "ISUOG Virtual World Congress, 16-18 octombrie 2020.",
-        subtype: "Workshop invitat",
-        link: "https://www.isuog.org/events/past-events/world-congress-2021/general-information-2021/meet-the-sponsors/philips.html",
-      },
-      {
-        year: 2020,
-        title: "Management of peritoneal carcinomatosis",
-        source: "5th Panhellenic Congress of General Surgery, 25-27 septembrie 2020, Ptolemaida, Grecia.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2019,
-        title: "Transperineal ultrasound characterization of station 0",
-        source: "First ISLANDS Meeting (International Study Group in Labor and Delivery Sonography), Parma, 18 ianuarie 2019.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2019,
-        title: "Future as an objective past. Correlations of the sonopartogram with classic clinical partogram",
-        source: "First ISLANDS Meeting (International Study Group in Labor and Delivery Sonography), Parma, 18 ianuarie 2019.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2019,
-        title: "Fetal venous system. Simplicity is the ultimate sophistication",
-        source: "The 9th Romanian Ian Donald Course + Al XIII-lea Congres Național de Medicină Perinatală, 26-28 septembrie 2019, Cluj-Napoca.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2018,
-        title: "Transperineal intrapartum ultrasound. What is the aim?",
-        source: "International Society of Pelviperineology (ISPP) Congress, 4-6 octombrie 2018, București.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2018,
-        title: "Definitive diagnosis of major CNS abnormalities: more than a challenge",
-        source: "Fetus as a Patient, 18-19 mai 2018, București.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2018,
-        title: "Our experience in multidisciplinary approach of patients with congenital malformations and rare diseases. Better counseling and better outcome.",
-        source: "1st Congress Perinatal TOTAL Health, 26-30 iunie 2018, Sinaia.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2017,
-        title: "Intrapartum Ultrasound. Twenty Years After. Ecografia în travaliu, „după douăzeci de ani”",
-        source: "The 8th Romanian Ian Donald Course + Al XII-lea Congres Național de Medicină Perinatală, 27-28 septembrie 2017, Cluj-Napoca.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2017,
-        title: "Progesteronul primului trimestru sau primul trimestru al progesteronului? Mit, marketing medical, beneficii reale.",
-        source:
-          "International Conference „New Perspectives in Obstetrics and Gynecology”, 11-13 mai 2017, Iași.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2015,
-        title: "CNS abnormalities at 11-14 weeks",
-        source: "EUROSON / EFSUMB + HSUMB Congress, 6-8 noiembrie 2015.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2015,
-        title: "Controversies on early diagnosis of fetal brain anomalies",
-        source: "The 4th International Fetal Neurology Conference, 26-27 martie 2015, București.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2015,
-        title: "The sonopartogram – Friend or foe for the clinical exam?",
-        source: "The 3rd Congress of the Romanian Society of Ultrasound in Obstetrics and Gynecology, 27-28 martie 2015, București.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2015,
-        title: "Anatomia fetală la 11-14 săptămâni",
-        source: "Conferința Screening-ul de prim trimestru (FMF + Medicina fetală), 16-17 mai 2015, Timișoara.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2015,
-        title: "Anomalii fetale în primul trimestru - depistabile / când și ce anume?",
-        source: "Conferința Screening-ul de prim trimestru (FMF + Medicina fetală), 16-17 mai 2015, Timișoara.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2014,
-        title: "Controversies of early anomaly scan. General considerations and multicentric experience",
-        source: "Inter-University School of Medical Ultrasound / The 6th Romanian Ian Donald Course, 22-23 octombrie 2014, Cluj-Napoca.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2013,
-        title: "Transperineal ultrasound. The next step in the delivery room",
-        source: "Ian Donald School of Ultrasound, Greek Branch, 5th Advanced Course, decembrie 2013, Atena.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2013,
-        title: "First trimester anomaly scan",
-        source: "Ian Donald School of Ultrasound, Greek Branch, 5th Advanced Course, decembrie 2013, Atena.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2012,
-        title: "Early Detection Of Fetal Cardiovascular Anomalies",
-        source: "Target Meeting’s 2nd World Cardiovascular, Diabetes, and Obesity Online Conference, 11-14 septembrie 2012.",
-        subtype: "Invited plenary",
-        link: "http://www.targetmeeting.com",
-      },
-      {
-        year: 2011,
-        title: "Intrapartum ultrasonography",
-        source: "Ian Donald School, Greek Branch, 5th Advanced Course of Ultrasound in Obstetrics and Gynecology, 10-11 decembrie 2011, Atena.",
-        subtype: "Invited plenary",
-      },
-      {
-        year: 2024,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
-        source:
-          "Include temele furnizate pentru 2024 (HPV, SRUOG, Samsung hands-on, Tabăra de vară, medicină fetală, IA în diagnostic prenatal, histeroscopie, genomică, medicină comunitară, TACSYD, morfologie microscopică, conferințe regionale și naționale).",
-        subtype: "Colecție națională",
-      },
-      {
-        year: 2023,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
-        source:
-          "Include temele furnizate pentru 2023 (SRUOG, forumuri naționale, workshopuri Samsung, cursuri și webinare, prezentări de cazuri și sesiuni de training).",
-        subtype: "Colecție națională",
-      },
-      {
-        year: 2022,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
-        source:
-          "Include temele furnizate pentru 2022 (congrese SOG/SRUOG, forumuri, conferințe de medicină de familie, cursuri precongres și activitate de prezidiu/comitete).",
-        subtype: "Colecție națională",
-      },
-      {
-        year: 2021,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
-        source:
-          "Include temele furnizate pentru 2021 (HPV, endometrioză, SRUOG, ANMCS, vaccinarea în sarcină, perinatologie, morfologie microscopică).",
-        subtype: "Colecție națională",
-      },
-      {
-        year: 2022,
-        title: "Simpozioane și webinarii (selecție din lista furnizată)",
-        source:
-          "Seria include webinarii și simpozioane interdisciplinare 2016-2022 privind microbiota, HMB, fibrom uterin, contracepție, vaccinare în sarcină, anemie feriprivă, infecții vaginale și screening cervical.",
-        subtype: "Simpozioane/webinarii",
-      },
-    ]),
+    entries: buildInvitedPlenarySourceEntries(),
   },
   {
     id: "books",
