@@ -115,16 +115,38 @@ export default function HomePage() {
           </div>
 
           <div className="rounded-[2rem] border border-[var(--color-border)] bg-white p-7 shadow-[0_24px_60px_rgba(15,35,42,0.06)] sm:p-10">
-            <div>
+            <div className="space-y-8">
               <SectionHeading
                 className="max-w-none"
                 eyebrow="Despre abordare"
                 title="Îngrijire medicală calmă, precisă și bine argumentată"
-                description="În alegerea unui medic obstetrician-ginecolog, experiența clinică este importantă. La fel de importantă este însă capacitatea de a analiza corect fiecare situație, de a diferenția esențialul de detaliile secundare și de a construi o conduită medicală adaptată nevoilor reale ale fiecărei paciente. Un act medical de calitate înseamnă nu doar investigații și tratamente, ci și judecată clinică, echilibru, claritate în comunicare și respect pentru contextul individual.
-                Pentru multe paciente, încrederea apare atunci când lucrurile sunt explicate limpede, fără grabă și fără ambiguități. De aceea, o abordare medicală solidă presupune evaluare atentă, recomandări bine fundamentate și decizii luate cu rigoare, responsabilitate și actualizare profesională constantă. Mai ales în obstetrică și ginecologie, unde deciziile pot avea implicații importante asupra sănătății, fertilității, sarcinii sau calității vieții, este esențial ca fiecare pas să fie susținut de competență și discernământ.
-                Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține această abordare orientată spre claritate, diagnostic atent și conduită medicală bine fundamentată. Experiența clinică este completată de implicarea constantă în educația medicală și cercetarea de specialitate, ceea ce contribuie la o practică bazată pe standarde actuale, evaluare critică și atenție reală pentru detalii.
-                Pentru pacientă, acest lucru se traduce printr-un parcurs medical mai clar, mai bine explicat și mai bine înțeles. Înseamnă investigații recomandate cu un scop precis, opțiuni prezentate onest, răspunsuri formulate clar și decizii construite pe argumente medicale solide. Înseamnă, de asemenea, o relație medicală bazată pe seriozitate, echilibru și încredere, mai ales în momentele în care este nevoie de siguranță, orientare și o evaluare atentă."
+                description="În obstetrică și ginecologie, un act medical de calitate înseamnă mai mult decât investigații și tratamente: înseamnă judecată clinică, claritate în comunicare și decizii adaptate contextului fiecărei paciente."
               />
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  "Evaluare atentă și recomandări fundamentate pe date clinice actuale.",
+                  "Explicații clare, fără grabă, pentru decizii medicale asumate și înțelese.",
+                  "Conduită echilibrată în situații cu impact asupra fertilității, sarcinii și sănătății ginecologice.",
+                  "Integrarea experienței clinice cu activitatea universitară și științifică.",
+                ].map((item) => (
+                  <article
+                    key={item}
+                    className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5"
+                  >
+                    <p className="text-sm leading-7 text-[var(--color-muted)]">{item}</p>
+                  </article>
+                ))}
+              </div>
+
+              <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7">
+                <p className="text-sm leading-7 text-[var(--color-muted)] sm:text-base">
+                  Activitatea medicală, universitară și științifică a Prof. Univ. Dr. Dominic Iliescu susține
+                  această abordare orientată spre claritate, diagnostic atent și conduită bine fundamentată. Pentru
+                  pacientă, aceasta se traduce într-un parcurs medical mai clar, opțiuni prezentate onest și decizii
+                  construite pe argumente solide, într-o relație bazată pe seriozitate și încredere.
+                </p>
+              </div>
             </div>
           </div>
         </Container>
