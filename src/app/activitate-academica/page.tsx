@@ -6,7 +6,6 @@ import { SectionHeading } from "@/components/section-heading";
 import { StructuredData } from "@/components/structured-data";
 import {
   academicSections,
-  academicStats,
   publicationSignals,
   siteData,
 } from "@/lib/content/site-content";
@@ -41,36 +40,6 @@ export default function AcademicPage() {
             />
           </div>
 
-          <div className="grid gap-4">
-            {academicStats.map((stat) => (
-              <div key={stat.label} className="rounded-[2rem] border border-[var(--color-border)] bg-white p-6">
-                <p className="font-display text-5xl leading-none text-[var(--color-accent-strong)]">{stat.value}</p>
-                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="pb-12 sm:pb-16">
-        <Container className="space-y-8">
-          {academicSections.map((section) => (
-            <AcademicSection key={section.title} {...section} />
-          ))}
-        </Container>
-      </section>
-
-      <section className="py-12 sm:py-16">
-        <Container className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8">
-            <h2 className="font-display text-4xl leading-none tracking-[-0.03em] text-[var(--color-ink)]">
-              Relevanță pentru paciente
-            </h2>
-            <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
-              Pentru pacientă, această activitate înseamnă acces la o perspectivă medicală actualizată, atentă la dovezile științifice și la evoluția standardelor de practică. Este diferența dintre o evaluare de rutină și o abordare construită pe experiență, actualizare și responsabilitate profesională.
-            </p>
-          </div>
-
           <div className="rounded-[2rem] border border-[var(--color-border)] bg-white p-6 shadow-[0_20px_55px_rgba(15,35,42,0.05)] sm:p-8">
             <h2 className="font-display text-4xl leading-none tracking-[-0.03em] text-[var(--color-ink)]">
               Repere ale activității științifice
@@ -94,6 +63,27 @@ export default function AcademicPage() {
             <p className="mt-6 text-sm leading-7 text-[var(--color-muted)]">
               Activitatea este legată de {siteData.academic_highlights.research_directions[0].toLowerCase()},{" "}
               {siteData.academic_highlights.research_directions[2].toLowerCase()} și de integrarea tehnologiilor moderne în practica obstetricii-ginecologiei.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <section className="pb-12 sm:pb-16">
+        <Container className="space-y-8">
+          {academicSections.map((section) => (
+            <AcademicSection key={section.title} {...section} />
+          ))}
+        </Container>
+      </section>
+
+      <section className="py-12 sm:py-16">
+        <Container>
+          <div className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8">
+            <h2 className="font-display text-4xl leading-none tracking-[-0.03em] text-[var(--color-ink)]">
+              Relevanță pentru paciente
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+              Pentru pacientă, această activitate înseamnă acces la o perspectivă medicală actualizată, atentă la dovezile științifice și la evoluția standardelor de practică. Este diferența dintre o evaluare de rutină și o abordare construită pe experiență, actualizare și responsabilitate profesională.
             </p>
           </div>
         </Container>
