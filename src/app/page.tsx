@@ -117,6 +117,7 @@ export default function HomePage() {
           <div className="rounded-[2rem] border border-[var(--color-border)] bg-white p-7 shadow-[0_24px_60px_rgba(15,35,42,0.06)] sm:p-10">
             <div>
               <SectionHeading
+                className="max-w-none"
                 eyebrow="Despre abordare"
                 title="Îngrijire medicală calmă, precisă și bine argumentată"
                 description="În alegerea unui medic obstetrician-ginecolog, experiența clinică este importantă. La fel de importantă este însă capacitatea de a analiza corect fiecare situație, de a diferenția esențialul de detaliile secundare și de a construi o conduită medicală adaptată nevoilor reale ale fiecărei paciente. Un act medical de calitate înseamnă nu doar investigații și tratamente, ci și judecată clinică, echilibru, claritate în comunicare și respect pentru contextul individual.
