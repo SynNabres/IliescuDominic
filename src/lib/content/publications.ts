@@ -15,6 +15,13 @@ export const publicationGroups: PublicationGroup[] = [
     entries: sortEntries([
       {
         year: 2025,
+        title: "Premiul Academiei Române „Daniel Danielopolu”",
+        source: "Academia Română, 2025.",
+        subtype: "DistincÈ›ie naÈ›ionalÄƒ",
+        authorsNote: "Dominic-Gabriel Iliescu, Smaranda Belciug.",
+      },
+      {
+        year: 2025,
         title: "Best poster award",
         source: "6th National Congress of the East-European Society of Endometriosis and Infertility and 9th National Conference of Romanian HPV Society.",
         subtype: "Premiu naÈ›ional",
