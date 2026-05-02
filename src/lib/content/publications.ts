@@ -1,4 +1,4 @@
-import type { PublicationEntry, PublicationGroup } from "@/lib/content/site-content";
+﻿import type { PublicationEntry, PublicationGroup } from "@/lib/content/site-content";
 
 const sortEntries = (entries: PublicationEntry[]) =>
   [...entries].sort((left, right) => {
@@ -9,53 +9,53 @@ const sortEntries = (entries: PublicationEntry[]) =>
 export const publicationGroups: PublicationGroup[] = [
   {
     id: "prizes-distinctions",
-    title: "Premii/distincții/medalii",
+    title: "Premii/distincÈ›ii/medalii",
     description:
-      "Distincțiile reunesc premii internaționale și naționale pentru lucrări, prezentări, postere și contribuții editoriale menționate explicit în CV.",
+      "DistincÈ›iile reunesc premii internaÈ›ionale È™i naÈ›ionale pentru lucrÄƒri, prezentÄƒri, postere È™i contribuÈ›ii editoriale menÈ›ionate explicit Ã®n CV.",
     entries: sortEntries([
       {
         year: 2025,
         title: "Best poster award",
         source: "6th National Congress of the East-European Society of Endometriosis and Infertility and 9th National Conference of Romanian HPV Society.",
-        subtype: "Premiu național",
+        subtype: "Premiu naÈ›ional",
         note: "Locul I.",
       },
       {
         year: 2024,
         title: "Wiley Top Cited Article 2022-2023 Prize",
         source:
-          "American Journal of Medical Genetics Part C: Seminars in Medical Genetics, pentru lucrarea «Prenatal phenotyping: A community effort to enhance the Human Phenotype Ontology».",
-        subtype: "Distincție internațională",
+          "American Journal of Medical Genetics Part C: Seminars in Medical Genetics, pentru lucrarea Â«Prenatal phenotyping: A community effort to enhance the Human Phenotype OntologyÂ».",
+        subtype: "DistincÈ›ie internaÈ›ionalÄƒ",
       },
       {
         year: 2024,
         title: "Evaluation of Ultrasonographic and morphopatologic findings in spina bifida",
         source:
-          "Al 12-lea Congres SRUOG și a 9-a Conferință Națională a Societății Române de HPV, 14 septembrie 2024.",
-        subtype: "Premiu național",
+          "Al 12-lea Congres SRUOG È™i a 9-a ConferinÈ›Äƒ NaÈ›ionalÄƒ a SocietÄƒÈ›ii RomÃ¢ne de HPV, 14 septembrie 2024.",
+        subtype: "Premiu naÈ›ional",
         note: "Locul I, Best poster.",
       },
       {
         year: 2023,
         title: "Recurrent isolated fetal pericardial effusion",
         source: "Romanian Society of Ultrasound in Obstetrics and Gynecology Congress, 2023.",
-        subtype: "Premiu național",
+        subtype: "Premiu naÈ›ional",
         note: "Locul I, Best poster award.",
-        authorsNote: "George-Lucian Zorilă … Dominic-Gabriel Iliescu.",
+        authorsNote: "George-Lucian ZorilÄƒ â€¦ Dominic-Gabriel Iliescu.",
       },
       {
         year: 2023,
         title: "Early-onset fetal growth restriction",
         source: "National Congress of Fetal and Neonatal Medicine, Bucharest, 11-13 May 2023.",
-        subtype: "Premiu național",
+        subtype: "Premiu naÈ›ional",
         note: "Locul I, Best poster award.",
-        authorsNote: "Elena-Iuliana-Anamaria Berbecaru … Dominic-Gabriel Iliescu.",
+        authorsNote: "Elena-Iuliana-Anamaria Berbecaru â€¦ Dominic-Gabriel Iliescu.",
       },
       {
         year: 2022,
         title: "Mangementul miniminvaziv al sarcinii cicatriciale",
         source: "Summer School Obstetrics and Gynecology, 29 iunie - 1 iulie 2022.",
-        subtype: "Premiu național",
+        subtype: "Premiu naÈ›ional",
         note: "Locul III, prezentare de caz clinic.",
         authorsNote:
           "Elena-Iuliana-Anamaria Berbecaru, Alina Iuliana Enache, George Lucian Zorila, Dominic Gabriel Iliescu.",
@@ -64,35 +64,35 @@ export const publicationGroups: PublicationGroup[] = [
         year: 2020,
         title: "Prenatal ultrasound diagnosis of hemivertebrae in fetus",
         source: "XXIInd Edition of Craiova International Medical Students' Conference 2020.",
-        subtype: "Distincție internațională",
+        subtype: "DistincÈ›ie internaÈ›ionalÄƒ",
       },
       {
         year: 2020,
         title: "Professor Gheorghe Badea Prize",
         source:
-          "Romanian Society of Ultrasound in Medicine and Biology, pentru cea mai importantă realizare a anului 2020, volumul «General sonography».",
-        subtype: "Premiu național",
-        note: "Pentru contribuția «Ultrasound in Obstetrics and Gynecology».",
+          "Romanian Society of Ultrasound in Medicine and Biology, pentru cea mai importantÄƒ realizare a anului 2020, volumul Â«General sonographyÂ».",
+        subtype: "Premiu naÈ›ional",
+        note: "Pentru contribuÈ›ia Â«Ultrasound in Obstetrics and GynecologyÂ».",
       },
       {
         year: 2019,
         title: "Medical Students Conference Bucharest",
-        source: "Conferința Medical Students Conference Bucharest, 2019.",
-        subtype: "Premiu național",
+        source: "ConferinÈ›a Medical Students Conference Bucharest, 2019.",
+        subtype: "Premiu naÈ›ional",
         note: "Locul II.",
       },
       {
         year: 2019,
         title: "Prenatal diagnosis of venous system anomalies",
         source: "The 13th National Congress of Romanian Perinatal Medicine, Cluj, 2019.",
-        subtype: "Premiu național",
+        subtype: "Premiu naÈ›ional",
         note: "Locul I.",
       },
       {
         year: 2018,
         title: "The antenatal diagnosis of amniotic band syndrome",
         source: "1st International Perinatal TOTAL Health Congress, Sinaia, 27-30 iunie 2018.",
-        subtype: "Premiu internațional",
+        subtype: "Premiu internaÈ›ional",
         note: "Locul I, Best e-poster presentation.",
         authorsNote:
           "C. Patru, S. Tudorache, F. Tanase, R. Capitanescu, R. Dragusin, M. Florea, M. Cristian, L. Yorila, N. Cernea, Dominic Iliescu.",
@@ -100,15 +100,15 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2018,
         title: "The role of ultrasound in cervical cancer diagnosis and surveillance",
-        source: "The 17th Congress of Romanian Society of Obstetrics and Gynecology, Iași, 2018.",
-        subtype: "Premiu național",
+        source: "The 17th Congress of Romanian Society of Obstetrics and Gynecology, IaÈ™i, 2018.",
+        subtype: "Premiu naÈ›ional",
         note: "Locul III.",
       },
       {
         year: 2018,
         title: "Fetal neurosonography. 1st trimester vs 2nd trimester evaluation",
-        source: "SRUOG National Congress, secțiunea poster.",
-        subtype: "Distincție națională",
+        source: "SRUOG National Congress, secÈ›iunea poster.",
+        subtype: "DistincÈ›ie naÈ›ionalÄƒ",
         note: "Special Mention.",
       },
       {
@@ -116,22 +116,22 @@ export const publicationGroups: PublicationGroup[] = [
         title: "MRI at station 0 in a small series: how well performs the ultrasound estimations?",
         source:
           "ISUOG World Congress, section Ultrasound in term and preterm labour, 27th World Congress on Ultrasound in Obstetrics and Gynecology, Viena, Austria, 16-19 Sep 2017.",
-        subtype: "Premiu internațional",
+        subtype: "Premiu internaÈ›ional",
         note: "Best short oral presentation.",
       },
       {
         year: 2016,
         title:
-          "Quantitative Fluorescence PCR in the prenatal diagnosis of fetal aneuploidies – experience from Regional Centre of Medical Genetics Dolj",
+          "Quantitative Fluorescence PCR in the prenatal diagnosis of fetal aneuploidies â€“ experience from Regional Centre of Medical Genetics Dolj",
         source: "9th Conference of Genetics, Alba Iulia, 22-24 Sep 2016, Romanian Council of Medical Genetics.",
-        subtype: "Premiu internațional",
+        subtype: "Premiu internaÈ›ional",
         note: "Locul I.",
       },
       {
         year: 2013,
         title: "An idiopathic case of macroglossia diagnosed prenatally",
-        source: "15th Craiova International Medical Students’ Conference.",
-        subtype: "Premiu internațional",
+        source: "15th Craiova International Medical Studentsâ€™ Conference.",
+        subtype: "Premiu internaÈ›ional",
         note: "Locul I, best communication.",
         authorsNote:
           "Autori: Cazacu Irina Mihaela. Coordonatori: Nicolae Cernea, Stefania Tudorache, Dragusin Roxana, Iliescu Dominic.",
@@ -141,32 +141,28 @@ export const publicationGroups: PublicationGroup[] = [
         title: "ISUOG Congress Prize",
         source:
           "6th ISUOG Outreach Course / 2nd College of Obstetricians & Gynecologists Singapore Scientific Congress, Singapore (Sentosa Island), 14-17 Apr 2010.",
-        subtype: "Premiu internațional",
+        subtype: "Premiu internaÈ›ional",
         note: "Best oral presentation.",
       },
       {
         year: 2001,
         title: "Davies-Ascona Prize",
         source:
-          "IFMSA - International Federation of Medical Students’ Associations, pentru lucrarea «Study of the nutrition estate of rural population», 01.06.2001.",
-        subtype: "Premiu național",
+          "IFMSA - International Federation of Medical Studentsâ€™ Associations, pentru lucrarea Â«Study of the nutrition estate of rural populationÂ», 01.06.2001.",
+        subtype: "Premiu naÈ›ional",
       },
     ]),
   },
   {
     id: "invited-plenary-presentations",
-    title: invitedPlenaryData.title,
+    title: "PrezentÄƒri Ã®n calitate de invitat Ã®n plenul unor manifestÄƒri ÅŸtiinÅ£ifice sau cursuri internaÈ›ionale È™i naÈ›ionale",
     description:
-      "Selecție curatoriată a prelegerilor invitate (internaționale și naționale), organizată cronologic, pe baza listei furnizate pentru pagina de Publicații.",
-    entries: buildInvitedPlenarySourceEntries(),
-    title: "Prezentări în calitate de invitat în plenul unor manifestări ştiinţifice sau cursuri internaționale și naționale",
-    description:
-      "Selecție curatoriată a prelegerilor invitate (internaționale și naționale), organizată cronologic, pe baza listei furnizate pentru pagina de Publicații.",
+      "SelecÈ›ie curatoriatÄƒ a prelegerilor invitate (internaÈ›ionale È™i naÈ›ionale), organizatÄƒ cronologic, pe baza listei furnizate pentru pagina de PublicaÈ›ii.",
     entries: sortEntries([
       {
         year: 2024,
         title: "Urinary pH as borderline in the effectiveness of the treatment of urinary tract infections",
-        source: "5th International SREG Congress of Aesthetic Gynecology & Regenerative Medicine, 27 octombrie 2024, București.",
+        source: "5th International SREG Congress of Aesthetic Gynecology & Regenerative Medicine, 27 octombrie 2024, BucureÈ™ti.",
         subtype: "Invited plenary",
       },
       {
@@ -178,19 +174,19 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2023,
         title: "Obstetric and gynecologic malpractice claims, incidence and causes",
-        source: "Hellenic-Romanian Society of Surgery Conference, ediția a 3-a, 15-17 iunie 2023, Craiova.",
+        source: "Hellenic-Romanian Society of Surgery Conference, ediÈ›ia a 3-a, 15-17 iunie 2023, Craiova.",
         subtype: "Invited plenary",
       },
       {
         year: 2022,
         title: "Ultrasound evaluation of maternal trauma at birth",
-        source: "The XVIII Congress of Romanian Society of Urogynecology, internațional, Malta, 18-21 noiembrie 2022.",
+        source: "The XVIII Congress of Romanian Society of Urogynecology, internaÈ›ional, Malta, 18-21 noiembrie 2022.",
         subtype: "Invited plenary",
       },
       {
         year: 2022,
         title: "First trimester fetal heart interpretation by artificial intelligence",
-        source: "The 18th World Federation for Medicine and Biology Congress + SRUMB Annual Conference + EUROSON 2022, Timișoara, 25-28 mai 2022.",
+        source: "The 18th World Federation for Medicine and Biology Congress + SRUMB Annual Conference + EUROSON 2022, TimiÈ™oara, 25-28 mai 2022.",
         subtype: "Invited plenary",
       },
       {
@@ -201,7 +197,7 @@ export const publicationGroups: PublicationGroup[] = [
       },
       {
         year: 2022,
-        title: "Hysterosonosalpingography – better than expected",
+        title: "Hysterosonosalpingography â€“ better than expected",
         source: "3D/4D VISUS Course, Atena, 24-25 septembrie 2022.",
         subtype: "Invited plenary",
       },
@@ -253,19 +249,19 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2019,
         title: "Fetal venous system. Simplicity is the ultimate sophistication",
-        source: "The 9th Romanian Ian Donald Course + Al XIII-lea Congres Național de Medicină Perinatală, 26-28 septembrie 2019, Cluj-Napoca.",
+        source: "The 9th Romanian Ian Donald Course + Al XIII-lea Congres NaÈ›ional de MedicinÄƒ PerinatalÄƒ, 26-28 septembrie 2019, Cluj-Napoca.",
         subtype: "Invited plenary",
       },
       {
         year: 2018,
         title: "Transperineal intrapartum ultrasound. What is the aim?",
-        source: "International Society of Pelviperineology (ISPP) Congress, 4-6 octombrie 2018, București.",
+        source: "International Society of Pelviperineology (ISPP) Congress, 4-6 octombrie 2018, BucureÈ™ti.",
         subtype: "Invited plenary",
       },
       {
         year: 2018,
         title: "Definitive diagnosis of major CNS abnormalities: more than a challenge",
-        source: "Fetus as a Patient, 18-19 mai 2018, București.",
+        source: "Fetus as a Patient, 18-19 mai 2018, BucureÈ™ti.",
         subtype: "Invited plenary",
       },
       {
@@ -276,15 +272,15 @@ export const publicationGroups: PublicationGroup[] = [
       },
       {
         year: 2017,
-        title: "Intrapartum Ultrasound. Twenty Years After. Ecografia în travaliu, „după douăzeci de ani”",
-        source: "The 8th Romanian Ian Donald Course + Al XII-lea Congres Național de Medicină Perinatală, 27-28 septembrie 2017, Cluj-Napoca.",
+        title: "Intrapartum Ultrasound. Twenty Years After. Ecografia Ã®n travaliu, â€ždupÄƒ douÄƒzeci de aniâ€",
+        source: "The 8th Romanian Ian Donald Course + Al XII-lea Congres NaÈ›ional de MedicinÄƒ PerinatalÄƒ, 27-28 septembrie 2017, Cluj-Napoca.",
         subtype: "Invited plenary",
       },
       {
         year: 2017,
         title: "Progesteronul primului trimestru sau primul trimestru al progesteronului? Mit, marketing medical, beneficii reale.",
         source:
-          "International Conference „New Perspectives in Obstetrics and Gynecology”, 11-13 mai 2017, Iași.",
+          "International Conference â€žNew Perspectives in Obstetrics and Gynecologyâ€, 11-13 mai 2017, IaÈ™i.",
         subtype: "Invited plenary",
       },
       {
@@ -296,25 +292,25 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2015,
         title: "Controversies on early diagnosis of fetal brain anomalies",
-        source: "The 4th International Fetal Neurology Conference, 26-27 martie 2015, București.",
+        source: "The 4th International Fetal Neurology Conference, 26-27 martie 2015, BucureÈ™ti.",
         subtype: "Invited plenary",
       },
       {
         year: 2015,
-        title: "The sonopartogram – Friend or foe for the clinical exam?",
-        source: "The 3rd Congress of the Romanian Society of Ultrasound in Obstetrics and Gynecology, 27-28 martie 2015, București.",
+        title: "The sonopartogram â€“ Friend or foe for the clinical exam?",
+        source: "The 3rd Congress of the Romanian Society of Ultrasound in Obstetrics and Gynecology, 27-28 martie 2015, BucureÈ™ti.",
         subtype: "Invited plenary",
       },
       {
         year: 2015,
-        title: "Anatomia fetală la 11-14 săptămâni",
-        source: "Conferința Screening-ul de prim trimestru (FMF + Medicina fetală), 16-17 mai 2015, Timișoara.",
+        title: "Anatomia fetalÄƒ la 11-14 sÄƒptÄƒmÃ¢ni",
+        source: "ConferinÈ›a Screening-ul de prim trimestru (FMF + Medicina fetalÄƒ), 16-17 mai 2015, TimiÈ™oara.",
         subtype: "Invited plenary",
       },
       {
         year: 2015,
-        title: "Anomalii fetale în primul trimestru - depistabile / când și ce anume?",
-        source: "Conferința Screening-ul de prim trimestru (FMF + Medicina fetală), 16-17 mai 2015, Timișoara.",
+        title: "Anomalii fetale Ã®n primul trimestru - depistabile / cÃ¢nd È™i ce anume?",
+        source: "ConferinÈ›a Screening-ul de prim trimestru (FMF + Medicina fetalÄƒ), 16-17 mai 2015, TimiÈ™oara.",
         subtype: "Invited plenary",
       },
       {
@@ -338,7 +334,7 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2012,
         title: "Early Detection Of Fetal Cardiovascular Anomalies",
-        source: "Target Meeting’s 2nd World Cardiovascular, Diabetes, and Obesity Online Conference, 11-14 septembrie 2012.",
+        source: "Target Meetingâ€™s 2nd World Cardiovascular, Diabetes, and Obesity Online Conference, 11-14 septembrie 2012.",
         subtype: "Invited plenary",
         link: "http://www.targetmeeting.com",
       },
@@ -350,51 +346,51 @@ export const publicationGroups: PublicationGroup[] = [
       },
       {
         year: 2024,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
+        title: "Lector È™i prezidiu la manifestÄƒri/cursuri naÈ›ionale (listÄƒ extinsÄƒ)",
         source:
-          "Include temele furnizate pentru 2024 (HPV, SRUOG, Samsung hands-on, Tabăra de vară, medicină fetală, IA în diagnostic prenatal, histeroscopie, genomică, medicină comunitară, TACSYD, morfologie microscopică, conferințe regionale și naționale).",
-        subtype: "Colecție națională",
+          "Include temele furnizate pentru 2024 (HPV, SRUOG, Samsung hands-on, TabÄƒra de varÄƒ, medicinÄƒ fetalÄƒ, IA Ã®n diagnostic prenatal, histeroscopie, genomicÄƒ, medicinÄƒ comunitarÄƒ, TACSYD, morfologie microscopicÄƒ, conferinÈ›e regionale È™i naÈ›ionale).",
+        subtype: "ColecÈ›ie naÈ›ionalÄƒ",
       },
       {
         year: 2023,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
+        title: "Lector È™i prezidiu la manifestÄƒri/cursuri naÈ›ionale (listÄƒ extinsÄƒ)",
         source:
-          "Include temele furnizate pentru 2023 (SRUOG, forumuri naționale, workshopuri Samsung, cursuri și webinare, prezentări de cazuri și sesiuni de training).",
-        subtype: "Colecție națională",
+          "Include temele furnizate pentru 2023 (SRUOG, forumuri naÈ›ionale, workshopuri Samsung, cursuri È™i webinare, prezentÄƒri de cazuri È™i sesiuni de training).",
+        subtype: "ColecÈ›ie naÈ›ionalÄƒ",
       },
       {
         year: 2022,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
+        title: "Lector È™i prezidiu la manifestÄƒri/cursuri naÈ›ionale (listÄƒ extinsÄƒ)",
         source:
-          "Include temele furnizate pentru 2022 (congrese SOG/SRUOG, forumuri, conferințe de medicină de familie, cursuri precongres și activitate de prezidiu/comitete).",
-        subtype: "Colecție națională",
+          "Include temele furnizate pentru 2022 (congrese SOG/SRUOG, forumuri, conferinÈ›e de medicinÄƒ de familie, cursuri precongres È™i activitate de prezidiu/comitete).",
+        subtype: "ColecÈ›ie naÈ›ionalÄƒ",
       },
       {
         year: 2021,
-        title: "Lector și prezidiu la manifestări/cursuri naționale (listă extinsă)",
+        title: "Lector È™i prezidiu la manifestÄƒri/cursuri naÈ›ionale (listÄƒ extinsÄƒ)",
         source:
-          "Include temele furnizate pentru 2021 (HPV, endometrioză, SRUOG, ANMCS, vaccinarea în sarcină, perinatologie, morfologie microscopică).",
-        subtype: "Colecție națională",
+          "Include temele furnizate pentru 2021 (HPV, endometriozÄƒ, SRUOG, ANMCS, vaccinarea Ã®n sarcinÄƒ, perinatologie, morfologie microscopicÄƒ).",
+        subtype: "ColecÈ›ie naÈ›ionalÄƒ",
       },
       {
         year: 2022,
-        title: "Simpozioane și webinarii (selecție din lista furnizată)",
+        title: "Simpozioane È™i webinarii (selecÈ›ie din lista furnizatÄƒ)",
         source:
-          "Seria include webinarii și simpozioane interdisciplinare 2016-2022 privind microbiota, HMB, fibrom uterin, contracepție, vaccinare în sarcină, anemie feriprivă, infecții vaginale și screening cervical.",
+          "Seria include webinarii È™i simpozioane interdisciplinare 2016-2022 privind microbiota, HMB, fibrom uterin, contracepÈ›ie, vaccinare Ã®n sarcinÄƒ, anemie feriprivÄƒ, infecÈ›ii vaginale È™i screening cervical.",
         subtype: "Simpozioane/webinarii",
       },
     ]),
   },
   {
     id: "books",
-    title: "Cărți și volume coordonate",
+    title: "CÄƒrÈ›i È™i volume coordonate",
     description:
-      "Volumele coordonate și lucrările editoriale majore conturează direcțiile centrale de expertiză clinică, universitară și științifică.",
+      "Volumele coordonate È™i lucrÄƒrile editoriale majore contureazÄƒ direcÈ›iile centrale de expertizÄƒ clinicÄƒ, universitarÄƒ È™i È™tiinÈ›ificÄƒ.",
     entries: sortEntries([
       {
         year: 2024,
         title: "Inovation in Obstetrics and Gynecology",
-        source: "Editura Medichub Media, București.",
+        source: "Editura Medichub Media, BucureÈ™ti.",
         link: "https://www.medichub.ro/upload/files/obstetrica_ginecologie_2024_viata_medicala_2058.pdf",
       },
       {
@@ -408,40 +404,40 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2022,
         title: "Obstetrica",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "ISBN 978-973-106-351-5.",
       },
       {
         year: 2022,
         title: "Ginecologia",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "ISBN 978-973-106-366-9.",
       },
       {
         year: 2016,
         title: "Ultrasound in Obstetrics. Atlas",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "ISBN 978-973-106-278-5.",
       },
       {
         year: 2016,
         title: "Ultrasound in Gynecology",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "ISBN 978-973-106-279-2.",
       },
       {
         year: 2016,
         title: "Essential in Colposcopy",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "ISBN 978-973-106-277-8.",
       },
     ]),
   },
   {
     id: "international-chapters",
-    title: "Capitole internaționale",
+    title: "Capitole internaÈ›ionale",
     description:
-      "Capitolele publicate în volume internaționale reunesc contribuții din ecografie, medicină fetală, inteligență artificială și obstetrică modernă.",
+      "Capitolele publicate Ã®n volume internaÈ›ionale reunesc contribuÈ›ii din ecografie, medicinÄƒ fetalÄƒ, inteligenÈ›Äƒ artificialÄƒ È™i obstetricÄƒ modernÄƒ.",
     entries: sortEntries([
       {
         year: 2024,
@@ -503,7 +499,7 @@ export const publicationGroups: PublicationGroup[] = [
         title:
           "Congenital Abnormalities of the Fetal Face; Congenital Abnormalities of the Fetal Heart; Abnormalities of the Placenta; Fetal Abdominal Wall Defects; Fetal Central Nervous System Abnormalities; The Antenatal Detection of Fetal Limb Anomalies",
         source: "Congenital Anomalies - From the Embryo to the Neonate, InTechOpen.",
-        note: "Contribuții multiple în același volum.",
+        note: "ContribuÈ›ii multiple Ã®n acelaÈ™i volum.",
       },
       {
         year: 2017,
@@ -525,100 +521,100 @@ export const publicationGroups: PublicationGroup[] = [
   },
   {
     id: "national-contributions",
-    title: "Capitole și contribuții naționale",
+    title: "Capitole È™i contribuÈ›ii naÈ›ionale",
     description:
-      "Contribuțiile naționale reunesc capitole universitare, manuale și monografii care susțin activitatea didactică și practica de specialitate.",
+      "ContribuÈ›iile naÈ›ionale reunesc capitole universitare, manuale È™i monografii care susÈ›in activitatea didacticÄƒ È™i practica de specialitate.",
     entries: sortEntries([
       {
         year: 2024,
-        title: "Influence of COVID pandemics on family and women’s health",
+        title: "Influence of COVID pandemics on family and womenâ€™s health",
         source: "Natality and Family Health at the Beginning of XXIst Century, Romanian Academy, Editura Magic Print.",
       },
       {
         year: 2020,
         title: "Ultrasound in Obstetrics and Gynecology",
-        source: "General sonography, Editura Medicală Universitară Craiova.",
+        source: "General sonography, Editura MedicalÄƒ UniversitarÄƒ Craiova.",
       },
       {
         year: 2020,
         title: "Management of HSIL lesions",
-        source: "Diagnosis and management of cervical intraepithelial neoplasia, Editura Universitară „Iuliu Hațieganu” Cluj-Napoca.",
+        source: "Diagnosis and management of cervical intraepithelial neoplasia, Editura UniversitarÄƒ â€žIuliu HaÈ›ieganuâ€ Cluj-Napoca.",
       },
       {
         year: 2020,
         title: "Ultrasound evaluation of the cervix; Low genital tract infections",
-        source: "Textbook of low genital tract conditions, Editura Universitară „Carol Davila”, București.",
-        note: "Contribuții grupate în același volum.",
+        source: "Textbook of low genital tract conditions, Editura UniversitarÄƒ â€žCarol Davilaâ€, BucureÈ™ti.",
+        note: "ContribuÈ›ii grupate Ã®n acelaÈ™i volum.",
       },
       {
         year: 2020,
         title: "Ultrasound investigation of endometrium",
-        source: "Modern investigation of the endometrial pathology, Editura Universitară „Carol Davila”, București.",
+        source: "Modern investigation of the endometrial pathology, Editura UniversitarÄƒ â€žCarol Davilaâ€, BucureÈ™ti.",
       },
       {
         year: 2016,
         title: "Nursing in Obstetrics and Gynecology",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
       },
       {
         year: 2016,
         title: "Ovarian cancer; Mammary cancer; Pelvic static disorders; Urinary incontinence; Postoperative management in gynecologic pathology",
-        source: "Manual of Gynecology & Nursing, Vol. II, Editura Medicală Universitară Craiova.",
-        note: "Capitole grupate în același volum.",
+        source: "Manual of Gynecology & Nursing, Vol. II, Editura MedicalÄƒ UniversitarÄƒ Craiova.",
+        note: "Capitole grupate Ã®n acelaÈ™i volum.",
       },
       {
         year: 2015,
         title: "Ultrasound evaluation in pregnancy in Diabetes pregnancies",
-        source: "Pregnancy and Diabetes. New approaches for diagnosis and monitoring, Editura Universitară „Carol Davila”, București.",
+        source: "Pregnancy and Diabetes. New approaches for diagnosis and monitoring, Editura UniversitarÄƒ â€žCarol Davilaâ€, BucureÈ™ti.",
       },
       {
         year: 2010,
         title:
           "Paraclinic investigations in Gynecology; Benign pathology in vulval and vaginal dysplasia; Dystrophic and tumoral ovarian pathology; Dystrophic and tumoral breast pathology",
-        source: "Gynecology & Nursing, Vol. I, Editura Medicală Universitară Craiova.",
-        note: "Capitole grupate în același volum.",
+        source: "Gynecology & Nursing, Vol. I, Editura MedicalÄƒ UniversitarÄƒ Craiova.",
+        note: "Capitole grupate Ã®n acelaÈ™i volum.",
       },
       {
         year: 2009,
         title: "Cervical pathology",
-        source: "Monografie, Editura Medicală Universitară Craiova.",
+        source: "Monografie, Editura MedicalÄƒ UniversitarÄƒ Craiova.",
       },
       {
         year: 2009,
         title: "Symptomatology and clinical diagnosis in cervical conditions; Management of cervical conditions",
-        source: "Pathology of the uterine cervix, manual for the post university course, Editura Medicală Universitară Craiova.",
+        source: "Pathology of the uterine cervix, manual for the post university course, Editura MedicalÄƒ UniversitarÄƒ Craiova.",
       },
       {
         year: 2007,
         title: "Gynecology",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "Coautor / colaborator.",
       },
       {
         year: 2007,
         title: "Obstetrics",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "Coautor / colaborator.",
       },
       {
         year: 2005,
         title: "Gynecology",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "ISBN 973-7757-23-8.",
       },
       {
         year: 2005,
         title: "Obstetrics",
-        source: "Editura Medicală Universitară Craiova.",
+        source: "Editura MedicalÄƒ UniversitarÄƒ Craiova.",
         note: "ISBN 973-7757-06-8.",
       },
     ]),
   },
   {
     id: "translations",
-    title: "Traduceri și coordonare editorială",
+    title: "Traduceri È™i coordonare editorialÄƒ",
     description:
-      "Coordonarea edițiilor românești și traducerile editoriale completează activitatea academică prin transfer de standarde și conținut de referință.",
+      "Coordonarea ediÈ›iilor romÃ¢neÈ™ti È™i traducerile editoriale completeazÄƒ activitatea academicÄƒ prin transfer de standarde È™i conÈ›inut de referinÈ›Äƒ.",
     entries: sortEntries([
       {
         year: 2019,
@@ -633,116 +629,116 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2017,
         title: "Role of Sonography in Gynecologic Interventions; Ultrasound features in fetal syndromes",
-        source: "Callen’s Ultrasonography in Obstetrics and Gynecology, 6th ed., ediția românească, Editura Hipocrate.",
+        source: "Callenâ€™s Ultrasonography in Obstetrics and Gynecology, 6th ed., ediÈ›ia romÃ¢neascÄƒ, Editura Hipocrate.",
       },
       {
         year: 2016,
         title: "Obstetrical haemorrhage",
-        source: "Williams Obstetrics, ediția românească, Editura Hipocrate.",
+        source: "Williams Obstetrics, ediÈ›ia romÃ¢neascÄƒ, Editura Hipocrate.",
         note: "ISBN 9789738837270.",
       },
     ]),
   },
   {
     id: "isuog-guidelines",
-    title: "Ghiduri ISUOG și recomandări",
+    title: "Ghiduri ISUOG È™i recomandÄƒri",
     description:
-      "Traducerile și reviziile ISUOG susțin accesul la recomandări internaționale importante pentru practica zilnică în ecografie și medicină fetală.",
+      "Traducerile È™i reviziile ISUOG susÈ›in accesul la recomandÄƒri internaÈ›ionale importante pentru practica zilnicÄƒ Ã®n ecografie È™i medicinÄƒ fetalÄƒ.",
     entries: sortEntries([
       {
         year: 2019,
         title: "ISUOG Education Committee recommendations for basic training in obstetric and gynecological ultrasound",
-        source: "Traducere și revizie în limba română.",
+        source: "Traducere È™i revizie Ã®n limba romÃ¢nÄƒ.",
         note: "Editor / reviewer: Dr. Iliescu Dominic Gabriel.",
       },
       {
         year: 2018,
         title: "Practice Guidelines: invasive procedure for prenatal diagnosis",
-        source: "Traducere în limba română.",
+        source: "Traducere Ã®n limba romÃ¢nÄƒ.",
       },
       {
         year: 2018,
         title: "Practice Guidelines: role of ultrasound in twin pregnancy",
-        source: "Traducere în limba română.",
+        source: "Traducere Ã®n limba romÃ¢nÄƒ.",
       },
       {
         year: 2018,
         title: "Practice guidelines for performance of the routine mid-trimester fetal ultrasound scan",
-        source: "Traducere în limba română.",
+        source: "Traducere Ã®n limba romÃ¢nÄƒ.",
       },
       {
         year: 2018,
         title: "ISUOG Practice Guidelines: use of Doppler ultrasonography in obstetrics",
-        source: "Traducere în limba română.",
+        source: "Traducere Ã®n limba romÃ¢nÄƒ.",
       },
       {
         year: 2017,
-        title: "Sonographic examination of the fetal central nervous system for performing the “basic examination” and the “fetal neurosonogram”",
-        source: "Traducere în limba română.",
+        title: "Sonographic examination of the fetal central nervous system for performing the â€œbasic examinationâ€ and the â€œfetal neurosonogramâ€",
+        source: "Traducere Ã®n limba romÃ¢nÄƒ.",
       },
       {
         year: 2016,
         title: "ISUOG Interim Guidance on ultrasound for Zika virus infection in pregnancy: information for healthcare professionals",
-        source: "Traducere în limba română.",
+        source: "Traducere Ã®n limba romÃ¢nÄƒ.",
       },
     ]),
   },
   {
     id: "national-guidelines",
-    title: "Ghiduri naționale de bună practică",
+    title: "Ghiduri naÈ›ionale de bunÄƒ practicÄƒ",
     description:
-      "Ghidurile naționale sunt prezentate individual, pentru a păstra claritatea tematică și a reflecta corect contribuțiile editoriale distincte.",
+      "Ghidurile naÈ›ionale sunt prezentate individual, pentru a pÄƒstra claritatea tematicÄƒ È™i a reflecta corect contribuÈ›iile editoriale distincte.",
     entries: sortEntries([
-      { year: 2017, title: "Pregnancy monitoring", source: "Ghid național de bună practică în obstetrică și ginecologie." },
-      { year: 2017, title: "Pregnancy booklet", source: "Ghid național de bună practică în obstetrică și ginecologie." },
-      { year: 2017, title: "Pelvic Inflammatory Disease", source: "Ghid național de bună practică în obstetrică și ginecologie." },
+      { year: 2017, title: "Pregnancy monitoring", source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie." },
+      { year: 2017, title: "Pregnancy booklet", source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie." },
+      { year: 2017, title: "Pelvic Inflammatory Disease", source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie." },
       {
         year: 2017,
         title: "Diagnosis and Management of Intrauterine Growth Restriction",
-        source: "Ghid național de bună practică în obstetrică și ginecologie.",
+        source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie.",
       },
       {
         year: 2017,
         title: "Ultrasonographic screening for fetal anomalies in the 1st trimester",
-        source: "Ghid național de bună practică în obstetrică și ginecologie.",
+        source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie.",
       },
       {
         year: 2017,
         title: "Ultrasonographic screening for fetal anomalies in the 2nd trimester",
-        source: "Ghid național de bună practică în obstetrică și ginecologie.",
+        source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie.",
       },
       {
         year: 2017,
         title: "Ultrasonographic screening for fetal anomalies in the 3rd trimester",
-        source: "Ghid național de bună practică în obstetrică și ginecologie.",
+        source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie.",
       },
       {
         year: 2017,
         title: "Implementation of Non-invasive Prenatal Testing during the standard screening for chromosomal abnormalities",
-        source: "Ghid național de bună practică în obstetrică și ginecologie.",
+        source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie.",
       },
-      { year: 2017, title: "Birth in cephalic presentation", source: "Ghid național de bună practică în obstetrică și ginecologie." },
-      { year: 2017, title: "Birth in pelvic presentation", source: "Ghid național de bună practică în obstetrică și ginecologie." },
-      { year: 2017, title: "Gynecological ultrasound examination", source: "Ghid național de bună practică în obstetrică și ginecologie." },
-      { year: 2017, title: "Placental abruption", source: "Ghid național de bună practică în obstetrică și ginecologie." },
+      { year: 2017, title: "Birth in cephalic presentation", source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie." },
+      { year: 2017, title: "Birth in pelvic presentation", source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie." },
+      { year: 2017, title: "Gynecological ultrasound examination", source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie." },
+      { year: 2017, title: "Placental abruption", source: "Ghid naÈ›ional de bunÄƒ practicÄƒ Ã®n obstetricÄƒ È™i ginecologie." },
     ]),
   },
   {
     id: "abstracts",
-    title: "Abstracte și prezentări la congrese",
+    title: "Abstracte È™i prezentÄƒri la congrese",
     description:
-      "Lista reunește rezumate, postere premiate și comunicări la congrese sau cursuri naționale și internaționale",
+      "Lista reuneÈ™te rezumate, postere premiate È™i comunicÄƒri la congrese sau cursuri naÈ›ionale È™i internaÈ›ionale",
     entries: sortEntries([
       {
         year: 2024,
         title: "Urinary pH as borderline in the effectiveness of the treatment of urinary tract infections",
-        source: "5th International SREG Congress of Aesthetic Gynecology & Regenerative Medicine, București.",
+        source: "5th International SREG Congress of Aesthetic Gynecology & Regenerative Medicine, BucureÈ™ti.",
         subtype: "Prezentare",
       },
       {
         year: 2024,
         title: "Evaluation of Ultrasonographic and morphopatologic findings in spina bifida",
-        source: "Al 12-lea Congres SRUOG și a 9-a Conferință Națională a Societății Române de HPV.",
+        source: "Al 12-lea Congres SRUOG È™i a 9-a ConferinÈ›Äƒ NaÈ›ionalÄƒ a SocietÄƒÈ›ii RomÃ¢ne de HPV.",
         subtype: "Poster premiat",
         note: "Best poster.",
       },
@@ -768,14 +764,14 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2023,
         title: "Early-onset fetal growth restriction",
-        source: "National Congress of Fetal and Neonatal Medicine, București.",
+        source: "National Congress of Fetal and Neonatal Medicine, BucureÈ™ti.",
         subtype: "Poster premiat",
         note: "Best poster award.",
       },
       {
         year: 2022,
         title: "Ultrasound evaluation of maternal trauma at birth",
-        source: "The 18th World Federation for Ultrasound in Medicine and Biology Congress / EUROSON 2022, Timișoara.",
+        source: "The 18th World Federation for Ultrasound in Medicine and Biology Congress / EUROSON 2022, TimiÈ™oara.",
         subtype: "Prezentare",
       },
       {
@@ -792,7 +788,7 @@ export const publicationGroups: PublicationGroup[] = [
       },
       {
         year: 2022,
-        title: "Hysterosonosalpingography – better than expected",
+        title: "Hysterosonosalpingography â€“ better than expected",
         source: "3D/4D VISUS Course, Atena.",
         subtype: "Prezentare",
       },
@@ -824,7 +820,7 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2020,
         title: "Prenatal ultrasound diagnosis of hemivertebrae in fetus",
-        source: "Craiova International Medical Students’ Conference.",
+        source: "Craiova International Medical Studentsâ€™ Conference.",
         subtype: "Abstract premiat",
       },
       {
@@ -854,7 +850,7 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2019,
         title: "Fetal venous system. Simplicity is the ultimate sophistication",
-        source: "The 9th Romanian Ian Donald Course / Al XIII-lea Congres Național de Medicină Perinatală, Cluj-Napoca.",
+        source: "The 9th Romanian Ian Donald Course / Al XIII-lea Congres NaÈ›ional de MedicinÄƒ PerinatalÄƒ, Cluj-Napoca.",
         subtype: "Prezentare",
       },
       {
@@ -867,13 +863,13 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2018,
         title: "Transperineal intrapartum ultrasound. What is the aim?",
-        source: "International Society of Pelviperineology Congress, București.",
+        source: "International Society of Pelviperineology Congress, BucureÈ™ti.",
         subtype: "Prezentare",
       },
       {
         year: 2018,
         title: "Definitive diagnosis of major CNS abnormalities: more than a challenge",
-        source: "Fetus as a Patient, București.",
+        source: "Fetus as a Patient, BucureÈ™ti.",
         subtype: "Prezentare",
       },
       {
@@ -892,7 +888,7 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2018,
         title: "The role of ultrasound in cervical cancer diagnosis and surveillance",
-        source: "17th Congress of Romanian Society of Obstetrics and Gynecology, Iași.",
+        source: "17th Congress of Romanian Society of Obstetrics and Gynecology, IaÈ™i.",
         subtype: "Premiu",
         note: "Locul III.",
       },
@@ -900,24 +896,24 @@ export const publicationGroups: PublicationGroup[] = [
         year: 2017,
         title: "MRI at station 0 in a small series: how well performs the ultrasound estimations?",
         source: "27th World Congress on Ultrasound in Obstetrics and Gynecology, Viena.",
-        subtype: "Prezentare premiată",
+        subtype: "Prezentare premiatÄƒ",
         note: "Best short oral presentation.",
       },
       {
         year: 2017,
-        title: "Intrapartum Ultrasound. Twenty Years After. Ecografia in travaliu, „după douăzeci de ani”",
-        source: "The 8th Romanian Ian Donald Course / Al XII-lea Congres Național de Medicină Perinatală, Cluj-Napoca.",
+        title: "Intrapartum Ultrasound. Twenty Years After. Ecografia in travaliu, â€ždupÄƒ douÄƒzeci de aniâ€",
+        source: "The 8th Romanian Ian Donald Course / Al XII-lea Congres NaÈ›ional de MedicinÄƒ PerinatalÄƒ, Cluj-Napoca.",
         subtype: "Prezentare",
       },
       {
         year: 2017,
         title: "Progesteronul primului trimestru sau primul trimestru al progesteronului? Mit, marketing medical, beneficii reale.",
-        source: "International Conference New Perspectives in Obstetrics and Gynecology, Iași.",
+        source: "International Conference New Perspectives in Obstetrics and Gynecology, IaÈ™i.",
         subtype: "Prezentare",
       },
       {
         year: 2016,
-        title: "Quantitative Fluorescence PCR in the prenatal diagnosis of fetal aneuploidies – experience from Regional Centre of Medical Genetics Dolj",
+        title: "Quantitative Fluorescence PCR in the prenatal diagnosis of fetal aneuploidies â€“ experience from Regional Centre of Medical Genetics Dolj",
         source: "9th Conference of Genetics, Alba Iulia.",
         subtype: "Premiu",
         note: "Locul I.",
@@ -931,25 +927,25 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2015,
         title: "Controversies on early diagnosis of fetal brain anomalies",
-        source: "The 4th International Fetal Neurology Conference, București.",
+        source: "The 4th International Fetal Neurology Conference, BucureÈ™ti.",
         subtype: "Prezentare",
       },
       {
         year: 2015,
-        title: "The sonopartogram – Friend or foe for the clinical exam?",
-        source: "The 3rd Congress of the Romanian Society of Ultrasound in Obstetrics and Gynecology, București.",
+        title: "The sonopartogram â€“ Friend or foe for the clinical exam?",
+        source: "The 3rd Congress of the Romanian Society of Ultrasound in Obstetrics and Gynecology, BucureÈ™ti.",
         subtype: "Prezentare",
       },
       {
         year: 2015,
-        title: "Anatomia fetală la 11-14 săptămâni",
-        source: "Conferința Screening-ul de prim trimestru, Fetal Medicine Foundation și Medicina fetală, Timișoara.",
+        title: "Anatomia fetalÄƒ la 11-14 sÄƒptÄƒmÃ¢ni",
+        source: "ConferinÈ›a Screening-ul de prim trimestru, Fetal Medicine Foundation È™i Medicina fetalÄƒ, TimiÈ™oara.",
         subtype: "Prezentare",
       },
       {
         year: 2015,
-        title: "Anomalii fetale în primul trimestru - depistabile / când și ce anume?",
-        source: "Conferința Screening-ul de prim trimestru, Fetal Medicine Foundation și Medicina fetală, Timișoara.",
+        title: "Anomalii fetale Ã®n primul trimestru - depistabile / cÃ¢nd È™i ce anume?",
+        source: "ConferinÈ›a Screening-ul de prim trimestru, Fetal Medicine Foundation È™i Medicina fetalÄƒ, TimiÈ™oara.",
         subtype: "Prezentare",
       },
       {
@@ -973,7 +969,7 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2012,
         title: "Early Detection Of Fetal Cardiovascular Anomalies",
-        source: "Target Meeting’s 2nd World Cardiovascular, Diabetes, and Obesity Online Conference.",
+        source: "Target Meetingâ€™s 2nd World Cardiovascular, Diabetes, and Obesity Online Conference.",
         subtype: "Prezentare",
       },
       {
