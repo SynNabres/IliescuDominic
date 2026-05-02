@@ -9,60 +9,61 @@ const sortEntries = (entries: PublicationEntry[]) =>
 export const publicationGroups: PublicationGroup[] = [
   {
     id: "prizes-distinctions",
-    title: "Premii/distincÈ›ii/medalii",
+    title: "Premii/distincții/medalii",
     description:
-      "DistincÈ›iile reunesc premii internaÈ›ionale È™i naÈ›ionale pentru lucrÄƒri, prezentÄƒri, postere È™i contribuÈ›ii editoriale menÈ›ionate explicit Ã®n CV.",
+      "Distincțiile reunesc premii internaționale și naționale pentru lucrări, prezentări, postere și contribuții editoriale menționate explicit în CV.",
     entries: sortEntries([
       {
         year: 2025,
         title: "Premiul Academiei Române „Daniel Danielopolu”",
         source: "Academia Română, 2025.",
-        subtype: "DistincÈ›ie naÈ›ionalÄƒ",
+        subtype: "Distincție națională",
         authorsNote: "Dominic-Gabriel Iliescu, Smaranda Belciug.",
       },
       {
         year: 2025,
         title: "Best poster award",
-        source: "6th National Congress of the East-European Society of Endometriosis and Infertility and 9th National Conference of Romanian HPV Society.",
-        subtype: "Premiu naÈ›ional",
+        source:
+          "6th National Congress of the East-European Society of Endometriosis and Infertility and 9th National Conference of Romanian HPV Society.",
+        subtype: "Premiu național",
         note: "Locul I.",
       },
       {
         year: 2024,
         title: "Wiley Top Cited Article 2022-2023 Prize",
         source:
-          "American Journal of Medical Genetics Part C: Seminars in Medical Genetics, pentru lucrarea Â«Prenatal phenotyping: A community effort to enhance the Human Phenotype OntologyÂ».",
-        subtype: "DistincÈ›ie internaÈ›ionalÄƒ",
+          "American Journal of Medical Genetics Part C: Seminars in Medical Genetics, pentru lucrarea «Prenatal phenotyping: A community effort to enhance the Human Phenotype Ontology».",
+        subtype: "Distincție internațională",
       },
       {
         year: 2024,
         title: "Evaluation of Ultrasonographic and morphopatologic findings in spina bifida",
         source:
-          "Al 12-lea Congres SRUOG È™i a 9-a ConferinÈ›Äƒ NaÈ›ionalÄƒ a SocietÄƒÈ›ii RomÃ¢ne de HPV, 14 septembrie 2024.",
-        subtype: "Premiu naÈ›ional",
+          "Al 12-lea Congres SRUOG și a 9-a Conferință Națională a Societății Române de HPV, 14 septembrie 2024.",
+        subtype: "Premiu național",
         note: "Locul I, Best poster.",
       },
       {
         year: 2023,
         title: "Recurrent isolated fetal pericardial effusion",
         source: "Romanian Society of Ultrasound in Obstetrics and Gynecology Congress, 2023.",
-        subtype: "Premiu naÈ›ional",
+        subtype: "Premiu național",
         note: "Locul I, Best poster award.",
-        authorsNote: "George-Lucian ZorilÄƒ â€¦ Dominic-Gabriel Iliescu.",
+        authorsNote: "George-Lucian Zorilă … Dominic-Gabriel Iliescu.",
       },
       {
         year: 2023,
         title: "Early-onset fetal growth restriction",
         source: "National Congress of Fetal and Neonatal Medicine, Bucharest, 11-13 May 2023.",
-        subtype: "Premiu naÈ›ional",
+        subtype: "Premiu național",
         note: "Locul I, Best poster award.",
-        authorsNote: "Elena-Iuliana-Anamaria Berbecaru â€¦ Dominic-Gabriel Iliescu.",
+        authorsNote: "Elena-Iuliana-Anamaria Berbecaru … Dominic-Gabriel Iliescu.",
       },
       {
         year: 2022,
         title: "Mangementul miniminvaziv al sarcinii cicatriciale",
         source: "Summer School Obstetrics and Gynecology, 29 iunie - 1 iulie 2022.",
-        subtype: "Premiu naÈ›ional",
+        subtype: "Premiu național",
         note: "Locul III, prezentare de caz clinic.",
         authorsNote:
           "Elena-Iuliana-Anamaria Berbecaru, Alina Iuliana Enache, George Lucian Zorila, Dominic Gabriel Iliescu.",
@@ -71,35 +72,35 @@ export const publicationGroups: PublicationGroup[] = [
         year: 2020,
         title: "Prenatal ultrasound diagnosis of hemivertebrae in fetus",
         source: "XXIInd Edition of Craiova International Medical Students' Conference 2020.",
-        subtype: "DistincÈ›ie internaÈ›ionalÄƒ",
+        subtype: "Distincție internațională",
       },
       {
         year: 2020,
         title: "Professor Gheorghe Badea Prize",
         source:
-          "Romanian Society of Ultrasound in Medicine and Biology, pentru cea mai importantÄƒ realizare a anului 2020, volumul Â«General sonographyÂ».",
-        subtype: "Premiu naÈ›ional",
-        note: "Pentru contribuÈ›ia Â«Ultrasound in Obstetrics and GynecologyÂ».",
+          "Romanian Society of Ultrasound in Medicine and Biology, pentru cea mai importantă realizare a anului 2020, volumul «General sonography».",
+        subtype: "Premiu național",
+        note: "Pentru contribuția «Ultrasound in Obstetrics and Gynecology».",
       },
       {
         year: 2019,
         title: "Medical Students Conference Bucharest",
-        source: "ConferinÈ›a Medical Students Conference Bucharest, 2019.",
-        subtype: "Premiu naÈ›ional",
+        source: "Conferința Medical Students Conference Bucharest, 2019.",
+        subtype: "Premiu național",
         note: "Locul II.",
       },
       {
         year: 2019,
         title: "Prenatal diagnosis of venous system anomalies",
         source: "The 13th National Congress of Romanian Perinatal Medicine, Cluj, 2019.",
-        subtype: "Premiu naÈ›ional",
+        subtype: "Premiu național",
         note: "Locul I.",
       },
       {
         year: 2018,
         title: "The antenatal diagnosis of amniotic band syndrome",
         source: "1st International Perinatal TOTAL Health Congress, Sinaia, 27-30 iunie 2018.",
-        subtype: "Premiu internaÈ›ional",
+        subtype: "Premiu internațional",
         note: "Locul I, Best e-poster presentation.",
         authorsNote:
           "C. Patru, S. Tudorache, F. Tanase, R. Capitanescu, R. Dragusin, M. Florea, M. Cristian, L. Yorila, N. Cernea, Dominic Iliescu.",
@@ -107,15 +108,15 @@ export const publicationGroups: PublicationGroup[] = [
       {
         year: 2018,
         title: "The role of ultrasound in cervical cancer diagnosis and surveillance",
-        source: "The 17th Congress of Romanian Society of Obstetrics and Gynecology, IaÈ™i, 2018.",
-        subtype: "Premiu naÈ›ional",
+        source: "The 17th Congress of Romanian Society of Obstetrics and Gynecology, Iași, 2018.",
+        subtype: "Premiu național",
         note: "Locul III.",
       },
       {
         year: 2018,
         title: "Fetal neurosonography. 1st trimester vs 2nd trimester evaluation",
-        source: "SRUOG National Congress, secÈ›iunea poster.",
-        subtype: "DistincÈ›ie naÈ›ionalÄƒ",
+        source: "SRUOG National Congress, secțiunea poster.",
+        subtype: "Distincție națională",
         note: "Special Mention.",
       },
       {
@@ -123,22 +124,22 @@ export const publicationGroups: PublicationGroup[] = [
         title: "MRI at station 0 in a small series: how well performs the ultrasound estimations?",
         source:
           "ISUOG World Congress, section Ultrasound in term and preterm labour, 27th World Congress on Ultrasound in Obstetrics and Gynecology, Viena, Austria, 16-19 Sep 2017.",
-        subtype: "Premiu internaÈ›ional",
+        subtype: "Premiu internațional",
         note: "Best short oral presentation.",
       },
       {
         year: 2016,
         title:
-          "Quantitative Fluorescence PCR in the prenatal diagnosis of fetal aneuploidies â€“ experience from Regional Centre of Medical Genetics Dolj",
+          "Quantitative Fluorescence PCR in the prenatal diagnosis of fetal aneuploidies – experience from Regional Centre of Medical Genetics Dolj",
         source: "9th Conference of Genetics, Alba Iulia, 22-24 Sep 2016, Romanian Council of Medical Genetics.",
-        subtype: "Premiu internaÈ›ional",
+        subtype: "Premiu internațional",
         note: "Locul I.",
       },
       {
         year: 2013,
         title: "An idiopathic case of macroglossia diagnosed prenatally",
-        source: "15th Craiova International Medical Studentsâ€™ Conference.",
-        subtype: "Premiu internaÈ›ional",
+        source: "15th Craiova International Medical Students’ Conference.",
+        subtype: "Premiu internațional",
         note: "Locul I, best communication.",
         authorsNote:
           "Autori: Cazacu Irina Mihaela. Coordonatori: Nicolae Cernea, Stefania Tudorache, Dragusin Roxana, Iliescu Dominic.",
@@ -148,15 +149,15 @@ export const publicationGroups: PublicationGroup[] = [
         title: "ISUOG Congress Prize",
         source:
           "6th ISUOG Outreach Course / 2nd College of Obstetricians & Gynecologists Singapore Scientific Congress, Singapore (Sentosa Island), 14-17 Apr 2010.",
-        subtype: "Premiu internaÈ›ional",
+        subtype: "Premiu internațional",
         note: "Best oral presentation.",
       },
       {
         year: 2001,
         title: "Davies-Ascona Prize",
         source:
-          "IFMSA - International Federation of Medical Studentsâ€™ Associations, pentru lucrarea Â«Study of the nutrition estate of rural populationÂ», 01.06.2001.",
-        subtype: "Premiu naÈ›ional",
+          "IFMSA - International Federation of Medical Students’ Associations, pentru lucrarea «Study of the nutrition estate of rural population», 01.06.2001.",
+        subtype: "Premiu național",
       },
     ]),
   },
