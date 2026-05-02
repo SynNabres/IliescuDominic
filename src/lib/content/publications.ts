@@ -1,38 +1,10 @@
 import type { PublicationEntry, PublicationGroup } from "@/lib/content/site-content";
-import invitedPlenaryData from "@/lib/content/prezentari-invitat-plen.json";
 
 const sortEntries = (entries: PublicationEntry[]) =>
   [...entries].sort((left, right) => {
     if (right.year !== left.year) return right.year - left.year;
     return left.title.localeCompare(right.title);
   });
-
-const buildInvitedPlenarySourceEntries = (): PublicationEntry[] => {
-  let inferredYear = 0;
-
-  return invitedPlenaryData.sections.flatMap((section) =>
-    section.entries.flatMap((entry) => {
-      const yearMatch = entry.event.match(/(?:19|20)\d{2}/);
-      if (yearMatch) {
-        inferredYear = Number(yearMatch[0]);
-      }
-
-      const urlsNote =
-        entry.urls && entry.urls.length > 1
-          ? `Link-uri: ${entry.urls.join(", ")}`
-          : undefined;
-
-      return entry.presentations.map((presentation) => ({
-        year: inferredYear,
-        title: presentation,
-        source: entry.event,
-        subtype: section.name,
-        link: entry.urls?.[0],
-        note: urlsNote,
-      }));
-    })
-  );
-};
 
 export const publicationGroups: PublicationGroup[] = [
   {
@@ -183,12 +155,10 @@ export const publicationGroups: PublicationGroup[] = [
   },
   {
     id: "invited-plenary-presentations",
-<<<<<<< ours
     title: invitedPlenaryData.title,
     description:
       "Selecție curatoriată a prelegerilor invitate (internaționale și naționale), organizată cronologic, pe baza listei furnizate pentru pagina de Publicații.",
     entries: buildInvitedPlenarySourceEntries(),
-=======
     title: "Prezentări în calitate de invitat în plenul unor manifestări ştiinţifice sau cursuri internaționale și naționale",
     description:
       "Selecție curatoriată a prelegerilor invitate (internaționale și naționale), organizată cronologic, pe baza listei furnizate pentru pagina de Publicații.",
@@ -414,7 +384,6 @@ export const publicationGroups: PublicationGroup[] = [
         subtype: "Simpozioane/webinarii",
       },
     ]),
->>>>>>> theirs
   },
   {
     id: "books",
@@ -758,8 +727,6 @@ export const publicationGroups: PublicationGroup[] = [
       { year: 2017, title: "Placental abruption", source: "Ghid național de bună practică în obstetrică și ginecologie." },
     ]),
   },
-<<<<<<< ours
-=======
   {
     id: "abstracts",
     title: "Abstracte și prezentări la congrese",
@@ -1017,5 +984,4 @@ export const publicationGroups: PublicationGroup[] = [
       },
     ]),
   },
->>>>>>> theirs
 ];
